@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body class="gray-body">
+
+    <header>
+        <div class="header-main">
+            <div class="header-logo">
+                <img src="img/Logo.png">
+            </div>
+            <div class="header-buttons">
+                <a href="">КАТАЛОГ</a>
+                <a href="">ПРОИЗВОДСТВО ЛСТК</a>
+                <a href="">МОДУЛЬНЫЕ ЗДАНИЯ</a>
+                <a href="">БЛОГ</a>
+                <a href="">О НАС</a>
+                <a href="">КОНТАКТЫ</a>
+                <a href="">СЛОВАРЬ</a>
+
+            </div>
+            <div class="header-lang">
+                <a href="">RU</a>
+                <a href="">ENG</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <style>
+
+.container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-gallery {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .thumbnail.active {
+            border-color: #000;
+        }
+
+        .details-container {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-description {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-slider {
+            max-width: 1200px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .swiper-container {
+            padding: 20px 0;
+        }
+
+        .swiper-category .swiper-button-prev,
+        .swiper-category .swiper-button-next {
+            color: #000;
+            top: 10px;
+        }
+        </style>
+         <div class="container">
+            <!-- Галерея изображений -->
+            <div class="image-gallery">
+                <img src="image1.jpg" alt="Main Image" class="main-image" id="mainImage">
+                <div class="thumbnail-container">
+                    <img src="image1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="image2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="image3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                    <!-- Добавьте столько миниатюр, сколько нужно -->
+                </div>
+            </div>
+    
+            <!-- Характеристики -->
+            <div class="details-container">
+                <h2>Рефрижераторный контейнер (20'RC) Carrier MicroLink 3</h2>
+                <p>Цена по запросу</p>
+                <ul>
+                    <li>Длина, см: 1220</li>
+                    <li>Ширина, см: 1220</li>
+                    <li>Высота, см: 1220</li>
+                    <li>Внутренние размеры: 1020 х 1020 х 1020</li>
+                    <li>Состояние: новое</li>
+                    <li>Год выпуска: 2024</li>
+                    <li>Компрессор: да</li>
+                    <li>Температурный режим: от -25°C до +25°C</li>
+                </ul>
+                <button>Отправить запрос</button>
+            </div>
+        </div>
+    
+        <!-- Описание -->
+        <div class="product-description">
+            <p>
+                20-футовый морской контейнер общего назначения (Кордованский синий) или 20-футовый сухой контейнер (Кордованский синий)
+                — это стандартный 20-футовый морской или железнодорожный контейнер общего назначения (6,06 x 2,43 x 2,59 метра).
+            </p>
+            <!-- Добавьте текст описания, как на изображении -->
+        </div>
+    
+        <!-- Товары в той же категории -->
+        <div class="category-slider">
+            <div class="categoru-slider-head">
+                <h2>Товары в той же категории</h2>
+                <div class="swiper-button-prev swiper-category"></div>
+                <div class="swiper-button-next swiper-category"></div>
+            </div>
+            <div class="swiper-container category-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="product1.jpg" alt="Product 1" />
+                        <p>Открытый морской контейнер</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product2.jpg" alt="Product 2" />
+                        <p>Сухогрузный контейнер</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product3.jpg" alt="Product 3" />
+                        <p>Открытый морской контейнер</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product3.jpg" alt="Product 3" />
+                        <p>Открытый морской контейнер</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product3.jpg" alt="Product 3" />
+                        <p>Открытый морской контейнер</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="product3.jpg" alt="Product 3" />
+                        <p>Открытый морской контейнер</p>
+                    </div>
+                    <!-- Добавьте больше слайдов при необходимости -->
+                </div>
+                <!-- Навигационные кнопки -->
+            </div>
+        </div>
+    
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/Logo.png" alt="GCS Logo" class="logo">
+            </div>
+            <div class="footer-content">
+                <div class="footer-left-center">
+                    <div class="footer-left">
+                        <div class="footer-left-ul">
+                            <ul>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">ЛСТК</a></li>
+                                <li><a href="#">Модульные здания</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-prava">
+                            <p>© 2024 Все права защищены</p>
+                        </div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="footer-center-p">
+                            <h3>Контакты</h3>
+                            <p><a href="tel:+8000000000"><img src="img/phone.png"> 8 (000) 000-00-00</a></p>
+                            <p><a href="mailto:mail.mail@yandex.ru"><img src="img/mail (1).png"> mail.mail@yandex.ru</a></p>
+                        </div>
+                        <div class="footer-politic">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <form>
+                        <div class="footer-form-input">
+                            <h3>СВЯЗАТЬСЯ С НАМИ</h3>
+                            <input type="text" placeholder="Имя" required>
+                            <input type="tel" placeholder="+7 (495) 000-00-00" required>
+                        </div>
+                        <div class="footer-form-button">
+                            <button type="submit">отправить</button>
+                            <p>нажимая кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с политикой конфиденциальности</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            element.classList.add('active');
+            mainImage.src = element.src;
+        }
+
+        const categorySlider = new Swiper('.category-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-category.swiper-button-next',
+                prevEl: '.swiper-category.swiper-button-prev',
+            },
+            loop: true,
+        });
+    </script>
+
+</body>
+</html>
