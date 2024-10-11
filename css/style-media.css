@@ -1,6 +1,40 @@
+@media screen and (max-width: 1600px) {
+    .overlay-text-for-img img {
+        width: auto ;
+    }
+    .page-lstk {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1489px) {
+    .title-head h1 {
+        font-size: 105px;
+    }
+    .title-head p {
+        font-size: 20px;
+        line-height: 25px; 
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .title-head h1 {
+        font-size: 85px;
+    }
+    .title-head p {
+        font-size: 20px;
+        line-height: 25px; 
+    }
+}
+
 @media screen and (max-width: 850px) {
     .header-buttons {
         display: none;
+    }
+    .page-lstk {
+        margin-top: 0px;
+    }
+    .overlay-text-for-img {
+        height: 68vh;
     }
     .header-mobile-menu {
         display: block;
@@ -172,8 +206,9 @@
         font-size: 14px;
     }
     .newsdetail-container {
-        padding: 0px;
+        padding: 7px;
         width: 100%;
+        max-width: 375px;
     }
     .newsdetail-share-container {
         flex-direction: column;
@@ -190,11 +225,11 @@
         font-size: 12px;
         line-height: 14.4px;
     }
-    .swiper-pagination {
-        width: 150% !important;
+    .slider-pagin-container-index .swiper-pagination {
+        /* width: 150% !important; */
         display: flex;
         justify-content: center;
-        background-color: white !important;
+        background-color: #F2F2F2 !important;
         padding-top: 15px;
     }
     .swiper-pagination-bullet {
@@ -215,17 +250,17 @@
     
     .swiper-wrapper {
         display: flex;
-        height: 150px;
+        /* height: 150px; */
     }
     
-    .swiper-slide {
+    /* .swiper-slide {
         background-color: #f0f0f0;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         width: 240px;
         height: 107px;
         flex-shrink: 0;
-    }
+    } */
     
     .news-block {
         padding: 10px;
@@ -255,12 +290,12 @@
         margin-top: 20px;
     }
     
-    .swiper-pagination {
+    /* .swiper-pagination {
         position: relative;
         bottom: 10px;
         height: 5px;
         background-color: #e0e0e0;
-    }
+    } */
     
     .swiper-pagination-bullet {
         width: 100px;
@@ -306,5 +341,439 @@
         line-height: 16px;
         font-size: 14px;
     }
+    .catalog-cat-flex {
+        display: block;
+    }
+    .catalog-car-sidebar-container {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .catalog-car-main-content {
+        width: 100%;
+    }
+    .catalog-car-product-card {
+        flex: 0 0 90%;
+    }
+    .mobile-container-cat-head {
+        display: block;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .catalog-car-main-cont-head {
+        display: none;
+        padding: 10px;
+    }
+    .mobile-container-cat-head h2 {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #003469;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+    .mobile-container-cat-head p {
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #818181;
+    }
+    /* .catalog-car-category ul {
+        display: none;
+    }
+    .catalog-car-sb-cond-group {
+        display: none;
+    } */
+    .catalog-car-sidebar {
+        margin-bottom: 10px;
+        padding: 15px 0px;
+    }
+    .catalog-car-product-list {
+        margin-top: 40px;
+    }
+    .cat-car-mobile-chevron {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cat-car-mobile-chevron img{
+        display: block;
+        padding: 0px 20px;   
+    }
+    .mobile-containet-cat-button {
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-containet-cat-button a{
+        display: flex;
+        align-items: center;
+    }
+    .mobile-container-cat-text {
+        max-height: 100px; /* Задаём высоту, которая показывает текст наполовину */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Плавное изменение высоты */
+    }
+    .mobile-container-cat-text.expanded {
+        max-height: 500px; /* Задаём высоту для полного показа текста */
+    }
+    .mb-cont-chevron-icon {
+        transition: transform 0.5s ease; /* Анимация для поворота изображения */
+    }
+    
+    .mb-cont-chevron-icon.rotated {
+        transform: rotate(180deg); /* Поворот на 180 градусов */
+    }
+    .cat-car-mobile-chevron h3 {
+        font-size: 16px;
+        line-height: 19.2px;
+        font-weight: 500;
+        color: #00346999;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding: 0px 20px;
+    }
+    .mobile-containet-cat-button a{
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        color: #00346999;
+    }
+    .rotated {
+        transform: rotate(180deg); /* Поворот на 180 градусов */
+    }
+    .cat-car-mobile-chevron img {
+        transition: transform 0.5s ease; /* Плавная анимация для поворота */
+    }
+    .expanded {
+        max-height: 500px !important; /* Достаточно большое значение для полного раскрытия блока */
+    }
+    .catalog-car-sb-cond-group {
+        max-height: 0; /* Изначальная высота 0 */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Плавное изменение высоты */
+    }
+    .take-tags span {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .take-tags {
+        padding: 20px 20px 0px 40px;
+    }
+    .take-cont-img {
+        margin-top: 0px;
+    }
+    .about-head h1 {
+        font-size: 62px;
+        line-height: 62px;
+        color: #003469;
+    }
+    .about-blocks-container {
+        width: auto;
+    }
+    .about-video-container {
+        width: auto;
+        height: 380px;
+    }
+    .about-blocks {
+        padding: 0px;        
+    }
+    .about-video-and-blocks {
+        flex-direction: column;
+    }
+    .main-form-main {
+        padding: 15px;
+    }
+    .text-about-block {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: bold;
+        color: #003469;
+    }
+    .text-about-arrow {
+        display: inline-block;
+        border-bottom: 6px solid #24588E;
+        width: 105px;
+        position: relative;
+        top: -9px;
+        left: -22px;
+    }
+    .text-about-arrow::after {
+        content: "→";
+        position: absolute;
+        right: -29px;
+        top: -30px;
+        font-size: 116px;
+        color: #24588E;
+    }
+    .desktop-title-gcs {
+        display: none;
+    }
+    .mobile-title-gcs {
+        display: block;
+    }
+    .about-blocks h2 {
+        font-size: 25px;
+        line-height: 25px;
+        color: #FFFFFF;;
+        margin-block-start: 20px;
+        margin-block-end: 15px;
+    }
+    .about-blocks p {
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #FFFFFF;
+        font-weight: 400;
+    }
+    .blog-dateandhead {
+        padding-left: 0px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .blog-page-block {
+        flex-direction: column;
+        height: auto;
+    }
+    .blog-dateandhead h3 {
+        margin-block-end: 0px;
+    }
+    .blog-dateandhead p {
+        margin-block-end: 0px;
+    }
+    .blog-contentandbutton {
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .blog-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .blog-dateandhead p{
+        display: none;
+    }
+    .blog-cont-butt-date {
+        display: block !important;
+    }
+    .blog-content-button {
+        justify-content: space-between;
+    }
+    .contacts-head h1 {
+        font-size: 62px;
+        line-height: 62px;
+    }
+    .contacts-send-call {
+        flex-direction: column;
+    }
+    .contacts-send-block {
+        width: auto;
+    }
+    .send-name h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .send-text span {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .send-email span {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .send-flex {
+        height: 90%;
+    }
+    .contacts-map-block {
+        width: auto;
+        height: auto;
+    }
+    .map-addres {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .map-marker {
+        margin-bottom: 15px;
+    }
+    .map-place {
+        height: 250px;
+    }
+    .map-place img {
+        height: 100%;
+    }
+    .contacts-map-block {
+        margin-bottom: 90px;
+    }
+    .page-slovari-head h1 {
+        font-size: 62px;
+        line-height: 62px;
+    }
+    .page-newsdetail-main {
+        flex-direction: column-reverse;
+    }
+    .slovari-sidebar {
+        padding: 10px;
+        max-width: 375px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .newsdetail-article-text {
+        text-align: justify;
+        max-width: 375px;
+        width: 100%;
+    }
+    .mobile-page-slovari-head {
+        display: block;
+    }
+    .desktop-page-slovari-head {
+        display: none;
+    }
+    .overlay-text-for-img img {
+        top: -30%;
+        width: 420px;
+        height: 760px;
+        object-fit: cover;
+    }
+    .overlay-text-for-img .overlay-text {
+        font-size: 43px;
+        line-height: 43px;
+    }
+    .overlay-text-for-img .cta-button {
+        width: 67%;
+    }
+    .kar-lstk-block {
+        flex-direction: column;
+    }
+    .kar-lstk-r-text-bolsh {
+        width: auto;
+    }
+    .kar-lstk-block h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .kar-lstk-r-text-melk p {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .kar-lstk-r-text-bolsh span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .kar-lstk-r-text-melk {
+        margin-top: 20px;
+    }
+    .kar-lstk-r-img {
+        width: 100%;
+    }
+    .kar-lstk-r-img-flex {
+        display: none;
+    }
+    .kar-lstk-r-img-slide-block {
+        width: 330px;
+    }
+    .kar-lstk-r-img-slide-block img{
+        width: 330px;
+        height: 250px;
+    }
+    .mobile-akradit-wrapper {
+        max-width: 375px;
+    }
+    .kar-lstk-r-img-slide {
+        max-width: 410px;
+        overflow: hidden;
+        display: block;
+    }
+    .dynamic-content {
+        display: none;
+    }
+    .kar-lstk-right-side {
+        align-items: baseline;
+    }
+    .kart-xark-blocks-obsh-flex {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .kart-xark-text {
+        display: none;
+    }
+    .kart-xark-text-mobile {
+        display: block;
+    }
+    .kart-xark-text-mobile span {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #00346999;
+        width: auto;
+        flex-wrap: wrap;
+        white-space: normal;
+        display: flex;
+    }
+    .kar-lstk-r-xarakterestikc {
+        width: 100%;
+    }
+    .kart-xark-numbers span {
+        font-size: 62px;
+        line-height: 62px;
+    }
+    .kart-xark-numbers-and-text p {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .components-padding span {
+        padding-left: 0px;
+    }
+    .components-button-slider {
+        display: none;
+    }
+    .kart-xark-blocks-obsh-flex {
+        width: 100%;
+    }
 
+    .dynamic-content-mobile  {
+        display: block;
+    }
+    .dynamic-content-mobile {
+        max-width: 420px;
+        overflow: hidden;
+    }
+    .dynamic-content-block  img{
+        width: 330px;
+        height: 387px;
+    }
+    .dynamic-content-block {
+        width: 330px;
+    }
+    .dynamic-content-block p {
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #003469;
+        text-align: justify;
+    }
+    
+    .components-button-slider-mobile {
+        display: block;
+        max-width: 420px;
+        overflow: hidden;
+    }
+    .components-button-slider-mobile-block img {
+        width: 330px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .components-button-slider-mobile-block {
+        width: 330px;
+        margin-right: 20px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .components-button-slider-mobile-block p {
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #003469;
+        text-align: justify;
+    }
+    .components-button-slider-mobile-block h2 {
+        font-size: 24px;
+        line-height: 24px;
+        color: #003469;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+    }
 }

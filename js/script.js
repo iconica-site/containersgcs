@@ -1,3 +1,54 @@
+// Открыть форму в Каталоге
+document.addEventListener('DOMContentLoaded', function() {
+    var popupButtons = document.querySelectorAll('#poppup-buy');
+    
+    popupButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            document.getElementById('catalog-car-popup-container').style.display = 'block';
+        });
+    });
+
+    document.getElementById('catalog-car-popup-close').addEventListener('click', function() {
+        document.getElementById('catalog-car-popup-container').style.display = 'none';
+    });
+
+    document.getElementById('catalog-car-popup-background').addEventListener('click', function() {
+        document.getElementById('catalog-car-popup-container').style.display = 'none';
+    });
+});
+
+// Открыть дропдаун Каталог
+document.getElementById('catalogButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвратить переход по ссылке
+    var dropdown = document.getElementById('catalogDropdown');
+
+    // Показать или скрыть дропдаун
+    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Закрытие дропдауна при клике вне его
+window.addEventListener('click', function(event) {
+    var dropdown = document.getElementById('catalogDropdown');
+    if (!event.target.matches('#catalogButton') && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
+});
+
+// дропдауны внутри дропдауна Каталог
+document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.toggle'); // Находим все элементы с классом toggle
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault(); // Предотвращаем переход по ссылке
+
+            // Переключаем класс active у соответствующего ul
+            const ulToToggle = this.nextElementSibling;
+            ulToToggle.classList.toggle('active');
+        });
+    });
+});
+
 // Получаем все элементы списка с классом "category-item"
 const categoryItems = document.querySelectorAll('.catalog-car-category-item');
 const dropdownItems = document.querySelectorAll('.catalog-car-category-dropdown li');
@@ -35,24 +86,6 @@ dropdownItems.forEach((item) => {
     });
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    var popupButtons = document.querySelectorAll('#poppup-buy');
-    
-    popupButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            document.getElementById('catalog-car-popup-container').style.display = 'block';
-        });
-    });
-
-    document.getElementById('catalog-car-popup-close').addEventListener('click', function() {
-        document.getElementById('catalog-car-popup-container').style.display = 'none';
-    });
-
-    document.getElementById('catalog-car-popup-background').addEventListener('click', function() {
-        document.getElementById('catalog-car-popup-container').style.display = 'none';
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Находим все элементы с классом faq-text

@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="css/style-media.css">
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
+<style>
+
+</style>
+ 
+    
+
 <body>
 
     <header>
@@ -22,7 +29,86 @@
                 <img src="img/Logo.png">
             </div>
             <div class="header-buttons">
-                <a href="">КАТАЛОГ</a>
+                <a href="" id="catalogButton">КАТАЛОГ</a>
+                <div id="catalogDropdown" class="katalog-index-dropdown">
+                    <div class="katalog-index-dropdown-section">
+                        <h3>По категориям</h3>
+                        <a class="toggle">Стандартные сухогрузные морские контейнеры</a>
+                        <ul>
+                            <li><a href="#">Общего назначения (Dry Cube)</a></li>
+                            <li><a href="#">Высокие (HighCube)</a></li>
+                            <!-- Добавить остальные пункты -->
+                        </ul>
+                        <a class="toggle">Специальные контейнеры</a>
+                        <ul>
+                            <li><a href="#">Open Top</a></li>
+                            <li><a href="#">Hard Top</a></li>
+                            <li><a href="#">Pallet Wide</a></li>
+                            <li><a href="#">Open side</a></li>
+                            <li><a href="#">Double Door</a></li>
+                            <li><a href="#">Mini Containers</a></li>
+                            <li><a href="#">Bulker container</a></li>
+                            <li><a href="#">Coal bin</a></li>
+                            <li><a href="#">Tank container</a></li>
+                            <li><a href="#">Flat rack</a></li>
+                            <li><a href="#">Half height</a></li>
+                            <li><a href="#">Dangerous goods</a></li>
+                            <!-- Добавить остальные пункты -->
+                        </ul>
+                        <a class="toggle">Рефрижераторные и изолированные контейнеры</a>
+                        <ul>
+                            <li><a href="#">Open Top</a></li>
+                            <li><a href="#">Hard Top</a></li>
+                        </ul>
+                        <a class="toggle">Оффшорные DNV контейнеры</a>
+                        <ul>
+                            <li><a href="#">Open Top</a></li>
+                            <li><a href="#">Hard Top</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-sect-border"></div>
+                    <div class="katalog-index-dropdown-section">
+                        <h3>По отраслям</h3>
+                        <a class="toggle">Горнодобывающая отрасль</a>
+                        <ul>
+                            <li><a href="#">Угольная добыча</a></li>
+                            <li><a href="#">Масло и газ</a></li>
+                        </ul>
+                        <a class="toggle">Сельское хозяйство</a>
+                        <ul>
+                            <li><a href="#">Ратсения</a></li>
+                            <li><a href="#">Водные растения</a></li>
+                        </ul>
+                        <a class="toggle">Общественное питание</a>
+                        <ul>
+                            <li><a href="#">Модуль</a></li>
+                            <li><a href="#">Кафе-контейнер</a></li>
+                            <li><a href="#">Изолированный</a></li>
+                            <li><a href="#">Угольная добыча</a></li>
+                        </ul>
+                        <a class="toggle">Отрасль мероприятий</a>
+                        <ul>
+                            <li><a href="#">Модуль</a></li>
+                            <li><a href="#">Кафе-контейнер</a></li>
+                            <li><a href="#">Изолированный</a></li>
+                            <li><a href="#">Угольная добыча</a></li>
+                        </ul>
+                        <a class="toggle">Логистическая промышленность</a>
+                        <ul>
+                            <li><a href="#">Модуль</a></li>
+                            <li><a href="#">Кафе-контейнер</a></li>
+                            <li><a href="#">Изолированный</a></li>
+                            <li><a href="#">Угольная добыча</a></li>
+                        </ul>
+                        <a class="toggle">Строительная отрасль</a>
+                        <ul>
+                            <li><a href="#">Модуль</a></li>
+                            <li><a href="#">Кафе-контейнер</a></li>
+                            <li><a href="#">Изолированный</a></li>
+                            <li><a href="#">Угольная добыча</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="">ПРОИЗВОДСТВО ЛСТК</a>
                 <a href="">МОДУЛЬНЫЕ ЗДАНИЯ</a>
                 <a href="">БЛОГ</a>
@@ -37,7 +123,10 @@
                 <a class="header-mobile-menu"><img src="img/menu (2).png"></a>
             </div>
         </div>
+
+    
     </header>
+    
 
     <main>
         <div class="tittle-gcs">
@@ -82,7 +171,7 @@
                         <div class="prod-block-name">
                             <p>Контейнеры</p>
                             <!-- <img src="img/arrow-up-right.png"> -->
-                            <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_245_5458)">
                                 <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -136,7 +225,7 @@
                         <div class="prod-block-name">
                             <p>Производство ЛСТК</p>
                             <!-- <img src="img/arrow-up-right.png"> -->
-                            <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                            <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                 <g clip-path="url(#clip0_245_5458)">
                                 <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -170,7 +259,7 @@
                         <div class="prod-block-name">
                             <p>Модульные здания</p>
                             <!-- <img src="img/arrow-up-right.png"> -->
-                            <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_245_5458)">
                                 <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -269,15 +358,40 @@
             </div>
             <!-- Навигация и пагинация -->
             <div class="navigation-pagination">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev slider-button-container-index"></div>
+                <div class="swiper-button-next slider-button-container-index"></div>
+                <div class="swiper-pagination slider-pagin-container-index"></div>
             </div>
         
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <!-- Слайд 1 -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slider-block-index">
+                        <div class="pagination-and-arrow">
+                            <div class="product-info">Category: Extra Doors</div>
+                            <div class="product-title">40' High Cube Side Open Double Door Container</div>
+                            <button class="btn-details">Подробнее</button>
+                        </div>
+                        <div class="product-image-container">
+                            <img src="img/slider.png" alt="Product Image">
+                            <div class="">
+                                <div class="product-dimensions height">
+                                    <span>высота контейнера</span>
+                                    <p>3,20 м</p>
+                                </div>
+                                <div class="product-dimensions width">
+                                    <span>ширина контейнера</span>
+                                    <p>6,10 м</p>
+                                </div>
+                                <div class="product-dimensions length">
+                                    <span>длина контейнера</span>
+                                    <p>10,4 м</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide slider-block-index">
                         <div class="pagination-and-arrow">
                             <div class="product-info">Category: Extra Doors</div>
                             <div class="product-title">40' High Cube Side Open Double Door Container</div>
@@ -300,30 +414,7 @@
                         </div>
                     </div>
         
-                    <div class="swiper-slide">
-                        <div class="pagination-and-arrow">
-                            <div class="product-info">Category: Extra Doors</div>
-                            <div class="product-title">40' High Cube Side Open Double Door Container</div>
-                            <button class="btn-details">Подробнее</button>
-                        </div>
-                        <div class="product-image-container">
-                            <img src="img/slider.png" alt="Product Image">
-                            <div class="product-dimensions height">
-                                <span>высота контейнера</span>
-                                <p>3,20 м</p>
-                            </div>
-                            <div class="product-dimensions width">
-                                <span>ширина контейнера</span>
-                                <p>6,10 м</p>
-                            </div>
-                            <div class="product-dimensions length">
-                                <span>длина контейнера</span>
-                                <p>10,4 м</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slider-block-index">
                         <div class="pagination-and-arrow">
                             <div class="product-info">Category: Extra Doors</div>
                             <div class="product-title">40' High Cube Side Open Double Door Container</div>
@@ -369,7 +460,7 @@
                             </div>
                             <div class="blog-buttons">
                                 <a>Читать полностью</a>
-                                <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_245_5458)">
                                     <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -395,7 +486,7 @@
                             </div>
                             <div class="blog-buttons">
                                 <a>Читать полностью</a>
-                                <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_245_5458)">
                                     <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -421,7 +512,7 @@
                             </div>
                             <div class="blog-buttons">
                                 <a>Читать полностью</a>
-                                <svg class="arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_245_5458)">
                                     <path d="M1.33334 34.6666L34.6667 1.33325" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M1.33334 1.33325H34.6667V34.6666" stroke="#003469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -445,7 +536,7 @@
                     <h2>АККРЕДИТАТОРЫ</h2>
                 </div>
                 <div class="swiper-container mobile-akreditatori">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper mobile-akradit-wrapper">
                         <!-- Слайды -->
                         <div class="swiper-slide">
                             <img src="img/image 54.png">
@@ -627,6 +718,10 @@
     
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+    
+</script>
 
 </body>
 </html>

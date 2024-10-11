@@ -41,155 +41,190 @@
     <main>
         <style>
 
-.container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
 
-        .image-gallery {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .main-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .thumbnail-container {
-            display: flex;
-            gap: 10px;
-        }
-
-        .thumbnail {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 5px;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: border-color 0.3s;
-        }
-
-        .thumbnail.active {
-            border-color: #000;
-        }
-
-        .details-container {
-            flex: 1;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-description {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .category-slider {
-            max-width: 1200px;
-            margin: 20px auto;
-            position: relative;
-        }
-
-        .swiper-container {
-            padding: 20px 0;
-        }
-
-        .swiper-category .swiper-button-prev,
-        .swiper-category .swiper-button-next {
-            color: #000;
-            top: 10px;
-        }
         </style>
-         <div class="container">
-            <!-- Галерея изображений -->
-            <div class="image-gallery">
-                <img src="image1.jpg" alt="Main Image" class="main-image" id="mainImage">
-                <div class="thumbnail-container">
-                    <img src="image1.jpg" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
-                    <img src="image2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
-                    <img src="image3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
-                    <!-- Добавьте столько миниатюр, сколько нужно -->
+<main>
+    <div class="navigation-bar">
+        <a>главная</a> / <a>каталог</a> / <a>контакты</a> / <a style="color: gray; text-decoration: underline;">Рефрижераторный контейнер (20'RC) Carrier MicroLink 3</a>
+    </div>
+    <div class="main-page">
+        <div class="main-page-container">
+            <div class="contacts-main">
+                <div class="product-page-container">
+                    <!-- Галерея изображений -->
+                    <div class="image-gallery">
+                        <div class="arrow left-arrow" onclick="prevImage()">&lt;</div>
+                        <img src="img/image 39 (1).png" alt="Main Image" class="main-image" id="mainImage">
+                        <div class="arrow right-arrow" onclick="nextImage()">&gt;</div>
+                        <div class="thumbnail-container">
+                            <img src="img/image 39 (1).png" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                            <img src="img/image 39 (2).png" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/image 39.png" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/image 39.png" alt="Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/image 39.png" alt="Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                            <!-- Добавьте столько миниатюр, сколько нужно -->
+                        </div>
+                    </div>
+            
+                    <!-- Характеристики -->
+                    <div class="details-container">
+                        <div class="details-cont-head">
+                            <h2>Рефрижераторный контейнер (20'RC) Carrier MicroLink 3</h2>
+                        </div>
+                        <div class="details-cont-text">
+                            <span>Стандартные контейнеры</span>
+                            <p>Цена по запросу</p>
+                        </div>
+                        <div class="details-cont-spisok">
+                            <h2>Характеристики</h2>
+                            <ul>
+                                <p>Внешине размеры</p>
+                                <li>
+                                    <span class="detail-cont-li-type">Длина, см:</span> 
+                                    <span class="detail-cont-li-xarakt">1220</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Ширина, см:</span> 
+                                    <span class="detail-cont-li-xarakt">1220</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Высота, см:</span>
+                                    <span class="detail-cont-li-xarakt">1220</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <p>Внутренние размеры</p>
+                                <li>
+                                    <span class="detail-cont-li-type">Длина, см:</span> 
+                                    <span class="detail-cont-li-xarakt">1020</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Ширина, см:</span> 
+                                    <span class="detail-cont-li-xarakt">1020</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Высота, см:</span>
+                                    <span class="detail-cont-li-xarakt">1020</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <p>Дополнительно</p>
+                                <li>
+                                    <span class="detail-cont-li-type">Состояние:</span>
+                                    <span class="detail-cont-li-xarakt">новый</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Год выпуска:</span>
+                                    <span class="detail-cont-li-xarakt">2024</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Компрессор:</span>
+                                    <span class="detail-cont-li-xarakt">поршневой</span>
+                                </li>
+                                <li>
+                                    <span class="detail-cont-li-type">Температурный режим:</span>
+                                    <span class="detail-cont-li-xarakt">от -25°C до +25°C</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail-cont-button">
+                            <a>отправить запрос</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-description">
+                    <h2>Описание: </h2>
+                    <p>
+                        20-футовый морской контейнер общего назначения (Королевский синий) или 20-футовый сухой контейнер (Королевский синий) — это стандартный 20-футовый морской контейнер королевского синего цвета с размерами 6,058 х 2,438 х 2,591 метра.
+                        20-футовый морской контейнер общего назначения ( Royal Blue) от Tradecorp Indonesia может стать решением для перевозки и доставки сухих грузов в различные регионы, как внутри страны, так и за рубежом. Этот тип сухого контейнера надежен для обеспечения экспортно-импортной деятельности или транспортно-экспедиторских операций.
+                        20-футовый морской контейнер общего назначения (Royal Blue) от Tradecorp Indonesia прошел испытания Bureau Veritas, подтвердив его прочность, мореходные качества и грузоподъемность. Кроме того, все контейнеры, поставляемые Tradecorp Indonesia, сертифицированы ISO и DNV для морских целей.
+                        20-футовый транспортный контейнер общего назначения (Royal Blue) — это новейший стандартный контейнер, произведенный Tradecorp Indonesia в 2024 году. Его модель подходит для перевозки и перевозки таких грузов, как сухие сельскохозяйственные продукты, сухие продукты животного происхождения, консервы, гранитные или мраморные блоки, глинозем, корм для рыб, соль, графит, мочевинное удобрение и акульи плавники.
+                        Получите лучшее предложение от Tradecorp Indonesia на заказ 20-футового транспортного контейнера общего назначения, заполнив онлайн-форму, доступную на странице KontainerIndonesia.co.id.
+                    </p>
+                </div>
+            
+                <div class="category-slider">
+                    <div class="categoru-slider-head">
+                        <h2>ТОВАРЫ В ТОЙ ЖЕ КАТЕГОРИИ</h2>
+                        <div class="pr-page-swip-button-flex">
+                            <div class="swiper-button-prev swiper-category-button"></div>
+                            <div class="swiper-button-next swiper-category-button"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-container category-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-            <!-- Характеристики -->
-            <div class="details-container">
-                <h2>Рефрижераторный контейнер (20'RC) Carrier MicroLink 3</h2>
-                <p>Цена по запросу</p>
-                <ul>
-                    <li>Длина, см: 1220</li>
-                    <li>Ширина, см: 1220</li>
-                    <li>Высота, см: 1220</li>
-                    <li>Внутренние размеры: 1020 х 1020 х 1020</li>
-                    <li>Состояние: новое</li>
-                    <li>Год выпуска: 2024</li>
-                    <li>Компрессор: да</li>
-                    <li>Температурный режим: от -25°C до +25°C</li>
-                </ul>
-                <button>Отправить запрос</button>
-            </div>
         </div>
-    
-        <!-- Описание -->
-        <div class="product-description">
-            <p>
-                20-футовый морской контейнер общего назначения (Кордованский синий) или 20-футовый сухой контейнер (Кордованский синий)
-                — это стандартный 20-футовый морской или железнодорожный контейнер общего назначения (6,06 x 2,43 x 2,59 метра).
-            </p>
-            <!-- Добавьте текст описания, как на изображении -->
-        </div>
-    
-        <!-- Товары в той же категории -->
-        <div class="category-slider">
-            <div class="categoru-slider-head">
-                <h2>Товары в той же категории</h2>
-                <div class="swiper-button-prev swiper-category"></div>
-                <div class="swiper-button-next swiper-category"></div>
-            </div>
-            <div class="swiper-container category-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="product1.jpg" alt="Product 1" />
-                        <p>Открытый морской контейнер</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="product2.jpg" alt="Product 2" />
-                        <p>Сухогрузный контейнер</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="product3.jpg" alt="Product 3" />
-                        <p>Открытый морской контейнер</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="product3.jpg" alt="Product 3" />
-                        <p>Открытый морской контейнер</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="product3.jpg" alt="Product 3" />
-                        <p>Открытый морской контейнер</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="product3.jpg" alt="Product 3" />
-                        <p>Открытый морской контейнер</p>
-                    </div>
-                    <!-- Добавьте больше слайдов при необходимости -->
-                </div>
-                <!-- Навигационные кнопки -->
-            </div>
-        </div>
-    
+    </div>
+        
 
     </main>
 
@@ -243,20 +278,37 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        let currentIndex = 0;
+
         function changeImage(element) {
             const mainImage = document.getElementById('mainImage');
-            const thumbnails = document.querySelectorAll('.thumbnail');
-            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            thumbnails.forEach((thumb, index) => {
+                if (thumb === element) {
+                    currentIndex = index;
+                }
+                thumb.classList.remove('active');
+            });
             element.classList.add('active');
             mainImage.src = element.src;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? thumbnails.length - 1 : currentIndex - 1;
+            changeImage(thumbnails[currentIndex]);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === thumbnails.length - 1) ? 0 : currentIndex + 1;
+            changeImage(thumbnails[currentIndex]);
         }
 
         const categorySlider = new Swiper('.category-swiper', {
             slidesPerView: 3,
             spaceBetween: 30,
             navigation: {
-                nextEl: '.swiper-category.swiper-button-next',
-                prevEl: '.swiper-category.swiper-button-prev',
+                nextEl: '.swiper-category-button.swiper-button-next',
+                prevEl: '.swiper-category-button.swiper-button-prev',
             },
             loop: true,
         });

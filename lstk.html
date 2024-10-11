@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1A4C7C; /* Цвет фона как на изображении */
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu ul li a:hover {
+    color: #ffcc00; /* Цвет текста при наведении */
+}
+
+.closebtn {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Анимация открытия меню */
+.open-menu {
+    width: 100%; /* Ширина меню в открытом состоянии */
+}
+
+.submenu {
+    display: none; /* Скрыт по умолчанию */
+    padding-left: 20px;
+}
+
+</style>
+ 
+    
+
+<body>
+
+<header style="    position: relative;
+    z-index: 5;">
+    <div class="header-main">
+        <div class="header-logo">
+            <img src="img/Logo.png">
+        </div>
+        <div class="header-buttons">
+            <a href="" id="catalogButton">КАТАЛОГ</a>
+            <div id="catalogDropdown" class="katalog-index-dropdown">
+                <div class="katalog-index-dropdown-section">
+                    <h3>По категориям</h3>
+                    <a class="toggle">Стандартные сухогрузные морские контейнеры</a>
+                    <ul>
+                        <li><a href="#">Общего назначения (Dry Cube)</a></li>
+                        <li><a href="#">Высокие (HighCube)</a></li>
+                        <!-- Добавить остальные пункты -->
+                    </ul>
+                    <a class="toggle">Специальные контейнеры</a>
+                    <ul>
+                        <li><a href="#">Open Top</a></li>
+                        <li><a href="#">Hard Top</a></li>
+                        <li><a href="#">Pallet Wide</a></li>
+                        <li><a href="#">Open side</a></li>
+                        <li><a href="#">Double Door</a></li>
+                        <li><a href="#">Mini Containers</a></li>
+                        <li><a href="#">Bulker container</a></li>
+                        <li><a href="#">Coal bin</a></li>
+                        <li><a href="#">Tank container</a></li>
+                        <li><a href="#">Flat rack</a></li>
+                        <li><a href="#">Half height</a></li>
+                        <li><a href="#">Dangerous goods</a></li>
+                        <!-- Добавить остальные пункты -->
+                    </ul>
+                    <a class="toggle">Рефрижераторные и изолированные контейнеры</a>
+                    <ul>
+                        <li><a href="#">Open Top</a></li>
+                        <li><a href="#">Hard Top</a></li>
+                    </ul>
+                    <a class="toggle">Оффшорные DNV контейнеры</a>
+                    <ul>
+                        <li><a href="#">Open Top</a></li>
+                        <li><a href="#">Hard Top</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-sect-border"></div>
+                <div class="katalog-index-dropdown-section">
+                    <h3>По отраслям</h3>
+                    <a class="toggle">Горнодобывающая отрасль</a>
+                    <ul>
+                        <li><a href="#">Угольная добыча</a></li>
+                        <li><a href="#">Масло и газ</a></li>
+                    </ul>
+                    <a class="toggle">Сельское хозяйство</a>
+                    <ul>
+                        <li><a href="#">Ратсения</a></li>
+                        <li><a href="#">Водные растения</a></li>
+                    </ul>
+                    <a class="toggle">Общественное питание</a>
+                    <ul>
+                        <li><a href="#">Модуль</a></li>
+                        <li><a href="#">Кафе-контейнер</a></li>
+                        <li><a href="#">Изолированный</a></li>
+                        <li><a href="#">Угольная добыча</a></li>
+                    </ul>
+                    <a class="toggle">Отрасль мероприятий</a>
+                    <ul>
+                        <li><a href="#">Модуль</a></li>
+                        <li><a href="#">Кафе-контейнер</a></li>
+                        <li><a href="#">Изолированный</a></li>
+                        <li><a href="#">Угольная добыча</a></li>
+                    </ul>
+                    <a class="toggle">Логистическая промышленность</a>
+                    <ul>
+                        <li><a href="#">Модуль</a></li>
+                        <li><a href="#">Кафе-контейнер</a></li>
+                        <li><a href="#">Изолированный</a></li>
+                        <li><a href="#">Угольная добыча</a></li>
+                    </ul>
+                    <a class="toggle">Строительная отрасль</a>
+                    <ul>
+                        <li><a href="#">Модуль</a></li>
+                        <li><a href="#">Кафе-контейнер</a></li>
+                        <li><a href="#">Изолированный</a></li>
+                        <li><a href="#">Угольная добыча</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="">ПРОИЗВОДСТВО ЛСТК</a>
+            <a href="">МОДУЛЬНЫЕ ЗДАНИЯ</a>
+            <a href="">БЛОГ</a>
+            <a href="">О НАС</a>
+            <a href="">КОНТАКТЫ</a>
+            <a href="">СЛОВАРЬ</a>
+
+        </div>
+        <div class="header-lang">
+            <a href="">RU</a>
+            <a href="">ENG</a>
+            <a class="header-mobile-menu" onclick="toggleMenu()"><img src="img/menu (2).png"></a>
+        </div>
+    </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu">
+    <div class="menu-header">
+        <span>Меню</span>
+        <a href="javascript:void(0);" class="closebtn" onclick="toggleMenu()">&times;</a>
+    </div>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="toggleCatalog()">КАТАЛОГ <span>-</span></a></li>
+        <ul id="catalog-submenu" class="submenu">
+            <li><a href="#">По категориям<span>+</span></a></li>
+            <li><a href="#">По отраслям<span>+</span></a></li>
+        </ul>
+        <li><a href="#">ПРОИЗВОДСТВО ЛСТК</a></li>
+        <li><a href="#">МОДУЛЬНЫЕ ЗДАНИЯ</a></li>
+        <li><a href="#">БЛОГ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+        <li><a href="#">СЛОВАРЬ</a></li>
+    </ul>
+</div>
+
+
+
+
+<main>
+
+<div class="navigation-bar" style="    z-index: 5;
+    position: relative;">
+    <a>главная</a> / <a>каталог</a> / <a>ЛСТК</a>
+</div>
+
+<div class="overlay-text-for-img">
+    <img src="img/image 36 (1).png">
+    <div style="    position: relative;
+    z-index: 5;
+    text-align: left;">
+        <div class="overlay-text">
+            ЛЕГКАЯ<br>
+             СТАЛЬНАЯ <br>
+            ТОНКОСТЕННАЯ <br>
+            КОНСТРУКЦИЯ
+        </div>
+    </div>
+    <div style="position: relative; z-index: 5; width: 100%;">
+        <a id="poppup-buy" class="cta-button">получить консультацию</a>
+    </div>
+</div>
+
+
+<div class="main-page page-lstk">
+    <div class="main-page-container">
+
+        <div class="karkasi-lstk-content">
+            <div class="kar-lstk-block">
+                <div class="kar-lstk-block-flex">
+                    <h2>КАРКАСЫ ЛСТК</h2>
+                </div>
+                <div class="kar-lstk-r-text-bolsh">
+                    <div class="kar-lstk-r-text-melk">
+                        <p>подходят в качестве строительного решения. Для жилых домов, офисов, общежитий, складов, кафе, культовых сооружений, жилых помещений и других эксплуатационных зданий.</p>
+                    </div>
+                    <span>В наших каркасах используются специальные конструкции на основе холоднодеформированной стали.</span>
+                </div>
+            </div>
+            <div class="kar-lstk-right-side">
+                <div class="kar-lstk-r-img">
+                    <div class="kar-lstk-r-img-flex">
+                        <img src="img/image 47.png">
+                        <img src="img/image 45.png">
+                    </div>
+                    <div class="swiper-container kar-lstk-r-img-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide kar-lstk-r-img-slide-block">
+                                <img src="img/image 47.png">
+                            </div>
+                            <div class="swiper-slide kar-lstk-r-img-slide-block">
+                                <img src="img/image 45.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usage-block">
+            <div class="kar-lstk-block">
+                <div class="kar-lstk-block-flex">
+                    <h2>ГДЕ ИСПОЛЬЗОВАТЬ</h2>
+                </div>
+                <div class="kar-lstk-r-text-bolsh kark-pochem-viberayut-span">
+                    <div class="kar-lstk-r-text-melk">
+                    </div>
+                    <span>Удобное и быстрое решение для строительства дома, офиса, склада или многоэтажного здания</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="swiper-container dynamic-content-mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide dynamic-content-block">
+                            <img src="img/image 48.png">
+                            <p>Преимущества каркасной конструкции LGS, такие как огнестойкость, долговечность, экономичность и безопасность, 
+                                делают ее альтернативным выбором при строительстве жилых домов. 
+                                В жилищном строительстве каркасная конструкция ЛГС применяется для стен, кровли и облицовки.</p>
+                        </div>
+                        <div class="swiper-slide dynamic-content-block">
+                            <img src="img/image 48 (1).png">
+                            <p>ЛСТК идеально подходят для жилых домов благодаря высокой прочности и легкости, что упрощает монтаж и снижает затраты на фундамент. 
+                                Гибкость в дизайне позволяет создавать уютные и функциональные пространства.</p>
+                        </div>
+                        <div class="swiper-slide dynamic-content-block">
+                            <img src="img/image 48 (2).png">
+                            <p>Каркасы из ЛСТК обеспечивают быстрое и экономичное строительство складских помещений. 
+                                Высокая прочность и устойчивость к внешним факторам делают такие конструкции надежными 
+                                для хранения товаров и материалов.</p>
+                        </div>
+                        <div class="swiper-slide dynamic-content-block">
+                            <img src="img/image 48 (3).png">
+                            <p>Строительство из ЛСТК позволяет возводить многоэтажные здания с высокой прочностью и устойчивостью.
+                                Легкость каркасов снижает нагрузки на фундамент, а гибкость в дизайне 
+                                дает возможность реализовать разнообразные архитектурные решения.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dynamic-content">
+                    <div class="block" id="block1">
+                        <div class="number-container">
+                            <span class="number">01</span>
+                        </div>
+                        <div class="controls-and-text-flex">
+                            <div class="controls">
+                                <button class="prevBtn"> < </button>
+                                <button class="nextBtn"> > </button>
+                            </div>
+                            <p>Преимущества каркасной конструкции LGS, такие как огнестойкость, долговечность, экономичность и безопасность, 
+                                делают ее альтернативным выбором при строительстве жилых домов. 
+                                В жилищном строительстве каркасная конструкция ЛГС применяется для стен, кровли и облицовки.</p>
+                        </div>
+                        <div class="dynam-content-img-flex">
+                            <img src="img/image 48.png" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="block" id="block2" style="display: none;">
+                        <div class="number-container">
+                            <span class="number">02</span>
+                        </div>
+                        <div class="controls-and-text-flex">
+                            <div class="controls">
+                                <button class="prevBtn"> < </button>
+                                <button class="nextBtn"> > </button>
+                            </div>
+                            <span>Для дома</span>
+                            <p>ЛСТК идеально подходят для жилых домов благодаря высокой прочности и легкости, что упрощает монтаж и снижает затраты на фундамент. 
+                                Гибкость в дизайне позволяет создавать уютные и функциональные пространства.</p>
+                        </div>
+                        <div class="dynam-content-img-flex">
+                            <img src="img/image 48 (1).png" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="block" id="block3" style="display: none;">
+                        <div class="number-container">
+                            <span class="number">03</span>
+                        </div>
+                        <div class="controls-and-text-flex">
+                            <div class="controls">
+                                <button class="prevBtn"> < </button>
+                                <button class="nextBtn"> > </button>
+                            </div>
+                            <span>Для дачи</span>
+                            <p> Каркасы из ЛСТК обеспечивают быстрое и экономичное строительство складских помещений. 
+                                Высокая прочность и устойчивость к внешним факторам делают такие конструкции надежными 
+                                для хранения товаров и материалов.</p>
+                        </div>
+                        <div class="dynam-content-img-flex">
+                            <img src="img/image 48 (2).png" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="block" id="block4" style="display: none;">
+                        <div class="number-container">
+                            <span class="number">04</span>
+                        </div>
+                        <div class="controls-and-text-flex">
+                            <div class="controls">
+                                <button class="prevBtn"> < </button>
+                                <button class="nextBtn"> > </button>
+                            </div>
+                            <span>Для многоэтажных зданий</span>
+                            <p>Строительство из ЛСТК позволяет возводить многоэтажные здания с высокой прочностью и устойчивостью.
+                                 Легкость каркасов снижает нагрузки на фундамент, а гибкость в дизайне 
+                                 дает возможность реализовать разнообразные архитектурные решения.</p>
+                        </div>
+                        <div class="dynam-content-img-flex">
+                            <img src="img/image 48 (3).png" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="karkasi-lstk-content kark-pochem-viberayut">
+            <div class="kar-lstk-block">
+                <div class="kar-lstk-block-flex">
+                    <h2>ПОЧЕМУ ВЫБИРАЮТ</h2>
+                </div>
+                <div class="kar-lstk-r-text-bolsh kark-pochem-viberayut-span">
+                    <div class="kar-lstk-r-text-melk">
+                    </div>
+                    <span>Каркасная конструкция из легкой тонкостенной стали -  современный выбор для строительства любых сооружений</span>
+                </div>
+            </div>
+            <div class="kar-lstk-right-side">
+                <div class="kar-lstk-r-xarakterestikc">
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex">
+                            <div class="kart-xark-mestoim">
+                                <span>на</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>30-60</span>
+                                    <p>%</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span>легче бетона</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span>легче бетона</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex">
+                            <div class="kart-xark-mestoim">
+                                <span>до</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>1000</span>
+                                    <p>ºС</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span>выдераживают температуру</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span>выдераживают температуру</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex">
+                            <div class="kart-xark-mestoim">
+                                <span>до</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>240</span>
+                                    <p>КМ/Ч</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span> выдераживают скорость ветра</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span> выдераживают скорость ветра  </span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex" style="    gap: 18px;">
+                            <div class="kart-xark-mestoim">
+                                <span>более</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>75</span>
+                                    <p>ЛЕТ</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span>прослужат</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span>прослужат</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+                   
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex">
+                            <div class="kart-xark-mestoim">
+                                <span>на</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>20</span>
+                                    <p>%</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span>прочность выше, чем у горячекатаной стали</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span>прочность выше, чем у горячекатаной стали</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+
+                   <div class="kart-xark-block">
+                        <div class="kart-xark-blocks-obsh-flex">
+                            <div class="kart-xark-mestoim">
+                                <span>до</span>
+                            </div>
+                            <div class="kart-xark-numbers">
+                                <div class="kart-xark-numbers-and-text">
+                                    <span>9</span>
+                                    <p>БАЛЛОВ</p>
+                                </div>
+                            </div>
+                            <div class="kart-xark-text-mobile">
+                                <span>землетрясения выдерживают</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kart-xark-text">
+                                <span>землетрясения выдерживают</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="kart-xark-block-border"></div>
+                </div>
+            </div>
+
+            <div class="karkasi-lstk-content kark-pochem-viberayut">
+                <div class="kar-lstk-block">
+                    <div class="kar-lstk-block-flex">
+                        <h2>КОМПОНЕНТЫ</h2>
+                    </div>
+                    <div class="kar-lstk-r-text-bolsh kark-pochem-viberayut-span components-padding">
+                        <div class="kar-lstk-r-text-melk">
+                        </div>
+                        <span>Применение лстк в строительных компонентах сильно изменило представление новых зданий, не пренебрегая  функциональностью.</span>
+                    </div>
+                </div>
+
+                <div class="swiper-container components-button-slider-mobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide  components-button-slider-mobile-block">
+                            <img src="img/image 49.png">
+                            <h2>КРОВЕЛЬНЫЕ ФЕРМЫ</h2>
+                            <p>Кровельные фермы ЛСТК легкие и просты в сборке. Использование ЛГС улучшает общее распределение нагрузки на конструкцию крыши. Устойчивость к влаге, огню и атакам вредителей делает кровельные фермы ЛСТК долговечными.</p>
+                        </div>
+                        <div class="swiper-slide components-button-slider-mobile-block">
+                            <img src="img/image 49 (1).png">
+                            <h2>БАЛКИ ПОЛА</h2>
+                            <p>В зданиях на основе ЛСТК балки перекрытия нелегко сломать, погнуть или деформировать из-за высоких температур или высокой влажности. Таким образом, способность балок пола выдерживать нагрузки гораздо больше, чем у балок пола из прочих материалов</p>
+                        </div>
+                        <div class="swiper-slide components-button-slider-mobile-block">
+                            <img src="img/image 49 (2).png">
+                            <h2>НАСТЕННЫЕ РАМЫ</h2>
+                            <p>Прочность стеновых каркасов ЛСТК неоспорима. Помимо простоты установки, плотность холоднокатаной стали делает конструкцию стены прочной, поддерживая крышу и потолок. Кроме того, рамы ЛСТК облегчают монтаж труб и электрических кабелей.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="components-button-slider">
+                    <div class="components-left-img">
+                        <img src="img/image 50.png" class="">
+                        <img src="img/image 50 (1).png" class="hidden">
+                        <img src="img/image 50 (2).png" class="hidden">
+                    </div>
+                    <div class="components-central-buttons">
+                        <div class="components-buttons">
+                            <a href="#" class="active" data-index="0">Кровельные фермы</a>
+                            <a href="#" data-index="1">Балки пола</a>
+                            <a href="#" data-index="2">Настенные рамы</a>
+                        </div>
+                        <div class="components-text">
+                            <span data-index="0">Кровельные фермы ЛСТК легкие и просты в сборке. Использование ЛГС улучшает общее распределение нагрузки на конструкцию крыши. Устойчивость к влаге, огню и атакам вредителей делает кровельные фермы ЛСТК долговечными.</span>
+                            <span data-index="1" class="hidden">В зданиях на основе ЛСТК балки перекрытия нелегко сломать, погнуть или деформировать из-за высоких температур или высокой влажности. Таким образом, способность балок пола выдерживать нагрузки гораздо больше, чем у балок пола из прочих материалов</span>
+                            <span data-index="2" class="hidden">Прочность стеновых каркасов ЛСТК неоспорима. Помимо простоты установки, плотность холоднокатаной стали делает конструкцию стены прочной, поддерживая крышу и потолок. Кроме того, рамы ЛСТК облегчают монтаж труб и электрических кабелей.</span>
+                        </div>
+                    </div>
+                    <div class="components-right-img-big">
+                        <img src="img/image 49.png" class="">
+                        <img src="img/image 49 (1).png" class="hidden">
+                        <img src="img/image 49 (2).png" class="hidden">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-form">
+                <div class="main-form-main">
+                    <form>
+                        <div class="main-form-head">
+                            <h2>Хотите узнать цену или получить более подробную информацию? Мы вам позвоним.</h2>
+                        </div>
+                        <div class="main-form-content">
+                            <div class="main-form-input">
+                                <input placeholder="Имя">
+                                <input placeholder="Почта">
+                                <input type="submit" value="отправить">
+                            </div>
+                            <div class="main-form-soglashenie">
+                                <span>нажимая кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с политикой конфиденциальности</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</main>
+
+<div id="catalog-car-popup-container">
+    <div id="catalog-car-popup-background"></div>
+    <div id="catalog-car-popup">
+        <div class="catalog-car-poppup-head">
+            <h2>Получить консультацию</h2>
+            <p>Введите контактные данные и наш менеджер свяжется с Вами </p>
+        </div>
+        <form class="catalog-car-form-popup">
+            <div class="catalog-car-form-popup-input">
+                <input type="text" placeholder="Имя" required>
+                <input type="text" placeholder="Телефон" required>
+                <button type="submit">отправить</button>
+            </div>
+        </form>
+        <p class="catalog-car-privacy-note">
+            Нажимая кнопку, я соглашаюсь на обработку моих персональных данных в соответствии с политикой конфиденциальности
+        </p>
+        <span id="catalog-car-popup-close">&times;</span>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/Logo.png" alt="GCS Logo" class="logo">
+        </div>
+        <div class="footer-content">
+            <div class="footer-left-center">
+                <div class="footer-left">
+                    <div class="footer-left-ul">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">ЛСТК</a></li>
+                            <li><a href="#">Модульные здания</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-prava">
+                        <p>© 2024 Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-p">
+                        <h3>Контакты</h3>
+                        <p><a href="tel:+8000000000"><img src="img/phone.png"> 8 (000) 000-00-00</a></p>
+                        <p><a href="mailto:mail.mail@yandex.ru"><img src="img/mail (1).png"> mail.mail@yandex.ru</a></p>
+                    </div>
+                    <div class="footer-politic">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <form>
+                    <div class="footer-form-input">
+                        <h3>СВЯЗАТЬСЯ С НАМИ</h3>
+                        <input type="text" placeholder="Имя" required>
+                        <input type="tel" placeholder="+7 (495) 000-00-00" required>
+                    </div>
+                    <div class="footer-form-button">
+                        <button type="submit">отправить</button>
+                        <p>нажимая кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с политикой конфиденциальности</p>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-mobile-politic">
+                <p>© 2024 Все права защищены</p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+var swiper3 = new Swiper('.kar-lstk-r-img-slide', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 10, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+var swiper4 = new Swiper('.dynamic-content-mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+var swiper5 = new Swiper('.components-button-slider-mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    if (menu.classList.contains("open-menu")) {
+        menu.classList.remove("open-menu");
+    } else {
+        menu.classList.add("open-menu");
+    }
+}
+
+function toggleCatalog() {
+    const catalogSubmenu = document.getElementById("catalog-submenu");
+    if (catalogSubmenu.style.display === "block") {
+        catalogSubmenu.style.display = "none";
+    } else {
+        catalogSubmenu.style.display = "block";
+    }
+}
+
+document.querySelectorAll('.components-buttons a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+
+        // Удаляем класс active у всех ссылок
+        document.querySelectorAll('.components-buttons a').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Добавляем класс active к текущей ссылке
+        this.classList.add('active');
+
+        // Получаем индекс нажатой ссылки
+        const index = this.dataset.index;
+
+        // Скрываем все изображения
+        document.querySelectorAll('.components-left-img img, .components-right-img-big img').forEach(img => {
+            img.classList.add('hidden');
+        });
+
+        // Показываем нужные изображения
+        document.querySelectorAll('.components-left-img img')[index].classList.remove('hidden');
+        document.querySelectorAll('.components-right-img-big img')[index].classList.remove('hidden');
+
+        // Скрываем все тексты
+        document.querySelectorAll('.components-text span').forEach(text => {
+            text.classList.add('hidden');
+        });
+
+        // Показываем нужный текст
+        document.querySelector(`.components-text span[data-index="${index}"]`).classList.remove('hidden');
+    });
+});
+
+
+let currentIndex = 0;
+const blocks = document.querySelectorAll('.block');
+const totalBlocks = blocks.length;
+
+document.querySelectorAll('.nextBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        blocks[currentIndex].style.display = 'none'; // Скрываем текущий блок
+        currentIndex = (currentIndex + 1) % totalBlocks; // Переход к следующему блоку
+        blocks[currentIndex].style.display = 'flex'; // Показываем следующий блок
+    });
+});
+
+document.querySelectorAll('.prevBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        blocks[currentIndex].style.display = 'none'; // Скрываем текущий блок
+        currentIndex = (currentIndex - 1 + totalBlocks) % totalBlocks; // Переход к предыдущему блоку
+        blocks[currentIndex].style.display = 'flex'; // Показываем предыдущий блок
+    });
+});
+
+</script>
+
+</body>
+</html>
