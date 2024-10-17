@@ -17,6 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    if (menu.classList.contains("open-menu")) {
+        menu.classList.remove("open-menu");
+    } else {
+        menu.classList.add("open-menu");
+    }
+}
+
+function toggleCatalog() {
+    const catalogSubmenu = document.getElementById("catalog-submenu");
+    if (catalogSubmenu.style.display === "block") {
+        catalogSubmenu.style.display = "none";
+    } else {
+        catalogSubmenu.style.display = "block";
+    }
+}
+
 // Открыть дропдаун Каталог
 document.getElementById('catalogButton').addEventListener('click', function(event) {
     event.preventDefault(); // Предотвратить переход по ссылке
@@ -121,17 +139,49 @@ const swiper1 = new Swiper('.swiper', {
 });
 
 var swiper2 = new Swiper('.mobile-akreditatori', {
-slidesPerView: 1,
-spaceBetween: 10,
-freeMode: true, // Включаем свободный режим для плавности
-breakpoints: {
-    640: {
-        slidesPerView: 2,  // Показывать 2 слайда на экранах больше 640px
-        spaceBetween: 20,
-    },
-    1024: {
-        slidesPerView: 3,  // Показывать 3 слайда на экранах больше 1024px
-        spaceBetween: 30,
-    }
-}
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 10, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+var swiper3 = new Swiper('.kar-lstk-r-img-slide', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 10, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+var swiper4 = new Swiper('.dynamic-content-mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+var swiper5 = new Swiper('.components-button-slider-mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
 });

@@ -120,12 +120,32 @@
             <div class="header-lang">
                 <a href="">RU</a>
                 <a href="">ENG</a>
-                <a class="header-mobile-menu"><img src="img/menu (2).png"></a>
+                <a class="header-mobile-menu" onclick="toggleMenu()"><img src="img/menu (2).png"></a>
             </div>
         </div>
 
     
     </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+            <span>Меню</span>
+            <a href="javascript:void(0);" class="closebtn" onclick="toggleMenu()">&times;</a>
+        </div>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="toggleCatalog()">КАТАЛОГ <span>-</span></a></li>
+            <ul id="catalog-submenu" class="submenu">
+                <li><a href="#">По категориям<span>+</span></a></li>
+                <li><a href="#">По отраслям<span>+</span></a></li>
+            </ul>
+            <li><a href="#">ПРОИЗВОДСТВО ЛСТК</a></li>
+            <li><a href="#">МОДУЛЬНЫЕ ЗДАНИЯ</a></li>
+            <li><a href="#">БЛОГ</a></li>
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">СЛОВАРЬ</a></li>
+        </ul>
+    </div>
     
 
     <main>
@@ -352,6 +372,50 @@
             </div>
         </div>
 
+        <div class="catalog-container">
+            <h2>КАТАЛОГ КОНТЕЙНЕРОВ</h2>
+            <div class="catalog-item">
+              <div class="catalog-item-flex">
+                <div class="item-number">[ 01 ]</div>
+                <div class="item-positions">20 позиций</div>
+              </div>
+              <div class="item-content">
+                <p>Стандартные сухогрузные морские контейнеры</p>
+                <div class="item-arrow"><img src="img/arrow-up-right.png"></div>
+              </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-flex">
+                    <div class="item-number">[ 02 ]</div>
+                    <div class="item-positions">20 позиций</div>
+                  </div>
+              <div class="item-content">
+                <p>Рефрижераторные и изолированные контейнеры</p>
+                <div class="item-arrow"><img src="img/arrow-up-right.png"></div>
+              </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-flex">
+                    <div class="item-number">[ 03 ]</div>
+                    <div class="item-positions">20 позиций</div>
+                  </div>
+              <div class="item-content">
+                <p>Специальные контейнеры</p>
+                <div class="item-arrow"><img src="img/arrow-up-right.png"></div>
+              </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-flex">
+                    <div class="item-number">[ 04 ]</div>
+                    <div class="item-positions">20 позиций</div>
+                  </div>
+              <div class="item-content">
+                <p>Оффшорные DNV контейнеры</p>
+                <div class="item-arrow"><img src="img/arrow-up-right.png"></div>
+              </div>
+            </div>
+        </div>
+
         <div class="slider-container populyariti-products">
             <div class="slider-head">
                 <h2>ПОПУЛЯРНЫЕ ПРОДУКТЫ</h2>
@@ -526,6 +590,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="blog-mobile-button">
+                    <a> все новости </a>
                 </div>
             </div>
         </div>

@@ -41,6 +41,21 @@
     }
     .tittle-gcs {
         padding: 0px;
+        margin-top: 30px;
+    }
+    .header-lang {
+        gap: 10px;
+    }
+    .header-logo img{
+        width: 77px;
+        margin-top: 5px;
+    }
+    .header-mobile-menu {
+        margin-left: 15px;
+    }
+    .prod-head h2 {
+        font-size: 30px;
+        line-height: 30px;
     }
     .title-head {
         margin-bottom: 20px;
@@ -67,14 +82,45 @@
         height: 297px;
     }
     .video-banner {
+        margin-bottom: 40px;
+    }
+    .production-and-service {
         margin-bottom: 50px;
+    }
+    .take-head h2 {
+        font-size: 30px;
+        line-height: 30px;
+        max-width: 350px;
+    }
+    .take-buttons a {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .take-cont-text {
+        text-align: left;
+        padding: 0px 20px;
+    }
+    .take-head {
+        margin-bottom: 0px;
     }
     .prod-content {
         flex-direction: column;
     }
     .take-tags {
         opacity: 100%;
+        padding: 20px 20px 0px 20px;
         visibility: visible;
+    }
+    .slider-head h2 {
+        font-size: 30px;
+        line-height: 30px;
+        max-width: 300px;
+    }
+    .take-cont-text h4 {
+        font-size: 20px;
+        line-height: 22px;
     }
     .blog-block {
         flex: 0 0 100%;
@@ -106,9 +152,11 @@
     }
     .footer-center h3 {
         color: white;
+        font-size: 16px;
     }
     .footer-center p a {
         color: #FFFFFF99;
+        font-size: 14px;
     }
     .footer-form-input h3 {
         font-size: 30px;
@@ -116,6 +164,14 @@
     }
     .footer-left-ul a {
         font-size: 16px;
+        white-space: nowrap;
+    }
+    .footer-right form button {
+        height: auto;
+        padding: 15px 30px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
     }
     .footer-left ul li {
         margin-bottom: 15px;
@@ -134,11 +190,15 @@
     .footer-mobile-politic p{
         color: #FFFFFF99;
         margin-block-start: 0em;
-        margin-block-end: 0em;
+        margin-block-end: 7px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .footer-mobile-politic a{
-        text-decoration: none;
+        text-decoration: underline;
         color: #FFFFFF99;
+        font-size: 14px;
+        line-height: 14px;
     }
     .footer-left-center {
         margin-bottom: 20px;
@@ -146,6 +206,13 @@
     .product-image-container {
         display: flex;
         justify-content: center;
+    }
+    .footer-form-button {
+        gap: 5px;
+    }
+    .footer-mobile-politic {
+        display: flex;
+        flex-direction: column;
     }
     .populyariti-products .swiper-slide {
         flex-direction: column-reverse;
@@ -174,7 +241,10 @@
     }
     .width {
         top: 110%;
-        left: 35%;
+        left: 33.8%;
+    }
+    .navigation-pagination {
+        margin-bottom: 0px;
     }
     .height {
         top: 110%;
@@ -182,8 +252,23 @@
     }
     .populyariti-products .swiper-pagination {
         left: 42%;
-        top: 1500%;
+        top: 1440%;
         position: absolute;
+    }
+    .blog-text p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .blog-mobile-button {
+        display: flex;
+        justify-content: center;
+        padding: 15px 30px;
+        border: solid 1px #003469;
+        border-radius: 100px;
+    }
+    .blog-mobile-button a{
+        color: #003469;
+        font-weight: 600;
     }
     .populyariti-products {
         margin-bottom: 50px;
@@ -247,7 +332,13 @@
         width: 66%;
     
     }
-    
+    .blog-head a {
+        display: none;
+    }
+    .blog-head h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
     .swiper-wrapper {
         display: flex;
         /* height: 150px; */
@@ -454,11 +545,10 @@
         display: inline-block;
         margin-bottom: 10px;
     }
-    .take-tags {
-        padding: 20px 20px 0px 40px;
-    }
+
     .take-cont-img {
         margin-top: 0px;
+        padding: 0px 20px;
     }
     .about-head h1 {
         font-size: 62px;
@@ -515,6 +605,44 @@
         color: #FFFFFF;;
         margin-block-start: 20px;
         margin-block-end: 15px;
+    }
+    .akreditatori-head h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .akreditatori {
+        margin-top: 50px;
+    }
+    .faq {
+        margin-top: 50px;
+    }
+    .faq-text img {
+        width: 25px;
+    }
+    .faq-head h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .faq-text h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .main-form {
+        margin-top: 50px;
+    }
+    .footer {
+        margin-top: 70px;
+    }
+    .faq-dropdown-text p{
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .mobile-akreditatori .swiper-slide {
+        width: 140px !important;
+    }
+    .mobile-akreditatori .swiper-slide img {
+        max-width: none;
+        width: 140px;
     }
     .about-blocks p {
         font-size: 14px;
@@ -776,4 +904,145 @@
         margin-block-start: 10px;
         margin-block-end: 10px;
     }
+    .product-page-container {
+        flex-direction: column;
+    }
+    .image-gallery {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .main-image {
+        height: auto;
+    }
+    .arrow {
+        top: 35%;
+        padding: 0px;
+        font-size: 45px;
+    }
+    .pr-page-swip-button-flex {
+        display: none;
+    }
+    .mobile-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .mobile-menu ul li {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .mobile-menu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .submenu li a {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+    .submenu li {
+        padding: 7px 20px !important;
+    }
+    
+    .mobile-menu ul li a:hover {
+        color: #ffcc00; /* Цвет текста при наведении */
+    }
+    
+    .closebtn {
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    /* Анимация открытия меню */
+    .open-menu {
+        width: 100%; /* Ширина меню в открытом состоянии */
+    }
+    
+    .submenu {
+        display: none; /* Скрыт по умолчанию */
+        padding-left: 20px;
+    }
+    /* .prod-block {
+        margin-left: 6px;
+    } */
+
+    .catalog-item {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #D9D9D9;
+      }
+      
+      .catalog-item-flex {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .catalog-container {
+        display: block;
+      }
+      .catalog-container h2 {
+          font-size: 30px;
+          line-height: 30px;
+          color: #00346999;
+          font-weight: 600;
+          max-width: 300px;
+          margin-block-start: 10px;
+          margin-block-end: 10px;
+          margin-top: 50px;
+      }
+      
+      .item-number {
+        font-size: 16px;
+        color: #A6A6A6;
+        margin-right: 10px;
+        width: 50px;
+      }
+      
+      .slider-head {
+          margin-top: 50px;
+      }
+      
+      .item-content {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .item-arrow img {
+          width: 20px;
+      }
+      
+      .item-content p {
+        font-size: 20px;
+        line-height: 22px;
+        color: #003469;
+        font-weight: 600;
+        margin-block-start: 5px;
+        margin-block-end: 0px;
+      }
+      
+      .item-positions {
+        background-color: #F7F7F7;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #818181;
+      }
+      
+      .item-arrow {
+        font-size: 20px;
+        color: #385EA9;
+      }
+     
 }

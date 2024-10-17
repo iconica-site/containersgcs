@@ -364,6 +364,11 @@ header {
 .blog-buttons a{
     color: #003469;
     transition: color 0.3s ease;
+    align-items: end;
+    display: flex;
+}
+.blog-mobile-button {
+    display: none;
 }
 
 .blog-block:hover {
@@ -743,7 +748,7 @@ header {
     color: #002855;
     cursor: pointer;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: none;
     height: 58px;
 }
 
@@ -1140,6 +1145,10 @@ li.active a{
         border: solid #003469 1px;
         margin-right: 20px;
         color: #003469;
+    }
+    .category-swiper {
+        max-width: 1360px;
+        overflow: hidden;
     }
     /* Изменяем стрелки */
     .slider-button-container-index::after, .slider-button-container-index::after {
@@ -2348,6 +2357,37 @@ button {
 .components-button-slider-mobile {
     display: none;
 }
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1A4C7C; /* Цвет фона как на изображении */
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #FFFFFF99;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #FFFFFF99;
+}
+
+
+.dropdown-sect-border {
+    border: solid 1px #FFFFFF99;
+    margin-right: 40px;
+}
+.catalog-container {
+    display: none;
+}
+
     
 
 
