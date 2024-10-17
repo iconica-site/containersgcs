@@ -1604,6 +1604,9 @@ li.active a{
         color: #00346999;
         margin-right: 10px;
     }
+    .take-head-index-main h2{
+        color: #00346999;
+    }
     .contacts-head h1{
         font-size: 120px;
         line-height: 120px;
