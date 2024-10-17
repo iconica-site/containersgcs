@@ -2373,7 +2373,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 6px 20px;
     color: #FFFFFF99;
     font-size: 1.5rem;
     border-bottom: 1px solid #FFFFFF99;
@@ -2385,6 +2385,9 @@ button {
     margin-right: 40px;
 }
 .catalog-container {
+    display: none;
+}
+.product-dim-mobile {
     display: none;
 }
 

@@ -17,23 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
-    if (menu.classList.contains("open-menu")) {
-        menu.classList.remove("open-menu");
-    } else {
-        menu.classList.add("open-menu");
-    }
-}
 
-function toggleCatalog() {
-    const catalogSubmenu = document.getElementById("catalog-submenu");
-    if (catalogSubmenu.style.display === "block") {
-        catalogSubmenu.style.display = "none";
-    } else {
-        catalogSubmenu.style.display = "block";
-    }
-}
 
 // Открыть дропдаун Каталог
 document.getElementById('catalogButton').addEventListener('click', function(event) {
