@@ -1044,5 +1044,8 @@
         font-size: 20px;
         color: #385EA9;
       }
+     .footer-logo {
+         margin-bottom: 0px;
+     }
      
 }
