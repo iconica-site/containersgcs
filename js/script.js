@@ -1,22 +1,3 @@
-// Открыть форму в Каталоге
-document.addEventListener('DOMContentLoaded', function() {
-    var popupButtons = document.querySelectorAll('#poppup-buy');
-    
-    popupButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            document.getElementById('catalog-car-popup-container').style.display = 'block';
-        });
-    });
-
-    document.getElementById('catalog-car-popup-close').addEventListener('click', function() {
-        document.getElementById('catalog-car-popup-container').style.display = 'none';
-    });
-
-    document.getElementById('catalog-car-popup-background').addEventListener('click', function() {
-        document.getElementById('catalog-car-popup-container').style.display = 'none';
-    });
-});
-
 function toggleMenu() {
     const menu = document.getElementById("mobile-menu");
     if (menu.classList.contains("open-menu")) {
@@ -62,6 +43,27 @@ function toggleSubMenu(submenuId, link) {
         span.innerHTML = "+"; // Меняем на плюс
     }
 }
+
+// Открыть форму в Каталоге
+document.addEventListener('DOMContentLoaded', function() {
+    var popupButtons = document.querySelectorAll('#poppup-buy');
+    
+    popupButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            document.getElementById('catalog-car-popup-container').style.display = 'block';
+        });
+    });
+
+    document.getElementById('catalog-car-popup-close').addEventListener('click', function() {
+        document.getElementById('catalog-car-popup-container').style.display = 'none';
+    });
+
+    document.getElementById('catalog-car-popup-background').addEventListener('click', function() {
+        document.getElementById('catalog-car-popup-container').style.display = 'none';
+    });
+});
+
+
 
 // Открыть дропдаун Каталог
 document.getElementById('catalogButton').addEventListener('click', function(event) {
@@ -213,3 +215,4 @@ var swiper5 = new Swiper('.components-button-slider-mobile', {
     // grabCursor: true, // Указатель мыши меняется на "руку"
     loop: false, // Отключаем бесконечную прокрутку
 });
+

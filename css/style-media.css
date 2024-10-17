@@ -444,7 +444,31 @@
         width: 100%;
     }
     .catalog-car-product-card {
-        flex: 0 0 90%;
+        flex: 0 0 75%;
+    }
+    .category-swiper-mobile {
+        overflow: hidden;
+    }
+    .about-us-main {
+        margin-bottom: 30px;
+    }
+    .blog-dateandhead h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .blog-dateandhead span {
+        width: 86px;
+        text-align: center;
+    }
+    .blog-cont-button-cont-flex img{
+        width: 24px;
+        height: 24px;
+    }
+    .blog-header h1 {
+        color: #003469;
+        font-size: 62px;
+        line-height: 62px;
+        margin-block-end: 20px;
     }
     .mobile-container-cat-head {
         display: block;
@@ -554,7 +578,22 @@
     .about-head h1 {
         font-size: 62px;
         line-height: 62px;
+        margin-bottom: 15px;
         color: #003469;
+    }
+    .news-filters-mobile {
+        display: block;
+    }
+    .news-filters-mobile {
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+    .news-filters-mobile a {
+        background-color: white;
+        color: #00346999;
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 10px;
     }
     .about-blocks-container {
         width: auto;
@@ -1000,8 +1039,9 @@
         transition: 0.3s;
         display: flex;
         justify-content: space-between;
-        font-size: 30px;
+        font-size: 21px;
         line-height: 30px;
+        font-size: 18px;
         line-height: 21.6px;
         font-weight: 500;
     }
@@ -1129,6 +1169,56 @@
     }
     .blog-content {
         justify-content: center;
+    }
+    .details-container {
+        width: auto;
+    }
+    .category-swiper-mobile {
+        display: block;
+    }
+    .category-swiper {
+        display: none;
+    }
+    .categoru-slider-head h2 { 
+        margin-block-end: 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .product-description {
+        margin-bottom: 20px;
+    }
+    
+    .collapsed {
+        max-height: 100px !important; /* Уменьшенная высота текста */
+    }
+
+    .product-description {
+        margin-top: 30px;
+    }
+    
+    #description {
+        transition: max-height 0.5s ease; /* Плавная анимация */
+        max-height: 800px; /* Установите максимальную высоту текста */
+        overflow: hidden; /* Скрываем текст, который выходит за пределы */
+    }
+    .product-description-button {
+        display: flex;
+        justify-content: center;
+    }
+    .product-description-button a {
+        display: flex;
+        align-items: center;
+        color: #00346999;
+    }
+    .product-description-button {
+        display: flex;
+    }
+    .thumbnail {
+        width: 78px;
+        height: 80px;
+    }
+    .navigation-bar {
+        flex-wrap: wrap;
     }
      
 }

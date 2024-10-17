@@ -14,6 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
+<style>
+
+
+
+</style>
+
 <body class="gray-body">
 
     <header style="    position: relative;
@@ -290,8 +297,7 @@
                             <img src="img/image 39 (1).png" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
                             <img src="img/image 39 (2).png" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
                             <img src="img/image 39.png" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
-                            <img src="img/image 39.png" alt="Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
-                            <img src="img/image 39.png" alt="Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                            <img src="img/image 39.png" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
                             <!-- Добавьте столько миниатюр, сколько нужно -->
                         </div>
                     </div>
@@ -364,14 +370,17 @@
                 </div>
             
                 <div class="product-description">
-                    <h2>Описание: </h2>
-                    <p>
+                    <h2>Описание:</h2>
+                    <p id="description" class="collapsed">
                         20-футовый морской контейнер общего назначения (Королевский синий) или 20-футовый сухой контейнер (Королевский синий) — это стандартный 20-футовый морской контейнер королевского синего цвета с размерами 6,058 х 2,438 х 2,591 метра.
-                        20-футовый морской контейнер общего назначения ( Royal Blue) от Tradecorp Indonesia может стать решением для перевозки и доставки сухих грузов в различные регионы, как внутри страны, так и за рубежом. Этот тип сухого контейнера надежен для обеспечения экспортно-импортной деятельности или транспортно-экспедиторских операций.
+                        20-футовый морской контейнер общего назначения (Royal Blue) от Tradecorp Indonesia может стать решением для перевозки и доставки сухих грузов в различные регионы, как внутри страны, так и за рубежом. Этот тип сухого контейнера надежен для обеспечения экспортно-импортной деятельности или транспортно-экспедиторских операций.
                         20-футовый морской контейнер общего назначения (Royal Blue) от Tradecorp Indonesia прошел испытания Bureau Veritas, подтвердив его прочность, мореходные качества и грузоподъемность. Кроме того, все контейнеры, поставляемые Tradecorp Indonesia, сертифицированы ISO и DNV для морских целей.
                         20-футовый транспортный контейнер общего назначения (Royal Blue) — это новейший стандартный контейнер, произведенный Tradecorp Indonesia в 2024 году. Его модель подходит для перевозки и перевозки таких грузов, как сухие сельскохозяйственные продукты, сухие продукты животного происхождения, консервы, гранитные или мраморные блоки, глинозем, корм для рыб, соль, графит, мочевинное удобрение и акульи плавники.
                         Получите лучшее предложение от Tradecorp Indonesia на заказ 20-футового транспортного контейнера общего назначения, заполнив онлайн-форму, доступную на странице KontainerIndonesia.co.id.
                     </p>
+                    <div class="product-description-button">
+                        <a id="toggleButton" onclick="toggleDescription()">Развернуть <img id="arrow" src="img/chevron-down.png" style="transform: rotate(0deg);"/></a>
+                    </div>
                 </div>
             
                 <div class="category-slider">
@@ -450,6 +459,76 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="swiper-container category-swiper-mobile">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide catalog-car-product-card">
+                                <div class="product-tag-and-img">
+                                    <ul>
+                                        <li>Pallet Wide</li>
+                                    </ul>
+                                    <div class="product-tag">
+                                        <span>новый</span>
+                                        <span>20 футов</span>
+                                    </div>
+                                </div>
+                                <img src="img/kat-cvet4.png" alt="Контейнер">
+                                <div class="product-info-and-button">
+                                    <h4>Открытый морской контейнер 20 футовый открытый со съемной крышей</h4>
+                                    <img src="img/weui_shop-outlined.png" id="poppup-buy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -542,6 +621,29 @@
             },
             loop: true,
         });
+
+        var swiper6 = new Swiper('.category-swiper-mobile', {
+            slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+            spaceBetween: 20, // отступ
+            speed: 800, // Плавная прокрутка
+            freeMode: true, // написал выше
+            effect: 'slide', // Эффект плавного перехода
+            touchRatio: 1.5, // Увеличение чувствительности при свайпе
+            resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+            // grabCursor: true, // Указатель мыши меняется на "руку"
+            loop: false, // Отключаем бесконечную прокрутку
+        });
+
+        function toggleDescription() {
+            const description = document.getElementById('description');
+            const arrow = document.getElementById('arrow');
+
+            // Переключаем класс collapsed для сжатия/разжатия текста
+            const isCollapsed = description.classList.toggle('collapsed');
+
+            // Поворачиваем стрелку на 180 градусов
+            arrow.style.transform = isCollapsed ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
     </script>
 
 </body>
