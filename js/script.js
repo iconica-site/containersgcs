@@ -17,7 +17,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    if (menu.classList.contains("open-menu")) {
+        menu.classList.remove("open-menu");
+        hideAllSections();
+    } else {
+        menu.classList.add("open-menu");
+        document.getElementById("main-menu").style.display = "block";
+    }
+}
 
+function hideAllSections() {
+    document.getElementById("main-menu").style.display = "none";
+    document.getElementById("category-menu").style.display = "none";
+    document.getElementById("industry-menu").style.display = "none";
+}
+
+function showMainMenu() {
+    hideAllSections();
+    document.getElementById("main-menu").style.display = "block";
+}
+
+function showCategoryMenu() {
+    hideAllSections();
+    document.getElementById("category-menu").style.display = "block";
+}
+
+function showIndustryMenu() {
+    hideAllSections();
+    document.getElementById("industry-menu").style.display = "block";
+}
+
+function toggleSubMenu(submenuId, link) {
+    const submenu = document.getElementById(submenuId);
+    const span = link.querySelector('span'); // Получаем span внутри ссылки
+
+    // Проверяем текущее состояние подменю
+    if (submenu.style.display === "none" || submenu.style.display === "") {
+        submenu.style.display = "block";
+        span.innerHTML = "-"; // Меняем на минус
+    } else {
+        submenu.style.display = "none";
+        span.innerHTML = "+"; // Меняем на плюс
+    }
+}
 
 // Открыть дропдаун Каталог
 document.getElementById('catalogButton').addEventListener('click', function(event) {
