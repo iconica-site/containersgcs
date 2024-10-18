@@ -2369,8 +2369,8 @@ button {
     display: none;
 }
 
-.active {
-    color: #003469 !important; /* Цвет активной ссылки */
+.components-buttons .active {
+    color: #003469 !important; 
 }
 .page-lstk {
     margin-top: 300px;
@@ -2478,6 +2478,213 @@ button {
     display: none;
 }
 
+
+/* Модульные здания */
+
+.overlay-text-modul span{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    max-width: 260px;
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+}
+
+.overlay-text-modul {
+    display: flex;
+    align-items: center;
+}
+.modul-cta-button {
+    width: 35% !important;
+}
+.kar-modul-r-text-melk p {
+    width: 70%;
+}
+.kar-modul-r-text-melk  {
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: end;
+}
+.kar-modul-img-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 50%;
+}
+
+.left-section img {
+  /* width: 250px;  */
+  height: auto;
+  border-radius: 5px;
+  max-width: 350px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* max-width: 300px; */
+  width: 30%;
+}
+
+.description-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.description-block h3 {
+  font-size: 24px;
+    color: #00346999;
+    padding: 10px;
+    border-right: solid 1px #C8C8C8;
+    border-bottom: solid 1px #C8C8C8;
+    margin-block-end: 70px;
+    margin-block-start: 0em;
+}
+
+.description-block p {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #818181;
+}
+
+.description-block strong {
+  color: #24588E; /* Blue color for headings */
+  font-size: 24px;
+  line-height: 26.4px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.accordion-number {
+  font-size: 24px;
+  color: #00346999;
+  transition: opacity 0.3s ease;
+}
+
+.accordion-title h2{
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #24588E;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+.accordion-title {
+    width: 446px;
+}
+
+.svg-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background-color: #24588E;
+  color: white;
+}
+
+.accordion-content p {
+  margin-bottom: 20px;
+}
+
+.order-button {
+    display: block;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: white;
+    color: #003469;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.order-button:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-image {
+  /* width: 100%; */
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: #24588E;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.accordion-item.active .accordion-title h2{
+  color: white;
+}
+
+.accordion-item.active .accordion-number {
+  opacity: 0; /* Скрытие номера */
+}
+
+.accordion-item.active .svg-arrow {
+  transform: rotate(0deg); /* Поворот стрелки */
+}
+
+.accordion-item.active .svg-arrow path {
+  stroke: white;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+}
+.accordion-content span{
+    max-width: 326px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 26.4px;
+    font-weight: 600;
+    color: #FFFFFF99;
+}
+.accordion-content-textbutt {
+    width: 28%;
+}
+.accordion-content-textbutt p{
+    text-align: justify;
+    margin-block-end: 3em;
+}
+.order-button-mobile {
+    display: none;
+}
     
 
 

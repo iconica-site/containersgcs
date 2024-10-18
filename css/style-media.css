@@ -837,6 +837,7 @@
     .kar-lstk-r-img-slide-block img{
         width: 330px;
         height: 250px;
+        border-radius: 4px;
     }
     .mobile-akradit-wrapper {
         max-width: 375px;
@@ -865,6 +866,9 @@
     .prod-block-name {
         justify-content: space-between;
         padding: 0px 20px;
+    }
+    .kark-pochem-viberayut-span span {
+        margin-block-start: 0em;
     }
     .kart-xark-text-mobile span {
         font-size: 20px;
@@ -1225,6 +1229,71 @@
     .navigation-bar {
         flex-wrap: wrap;
     }
+    .kar-modul-img-left {
+        flex-direction: column-reverse;
+    }
+    .right-section {
+        width: auto;
+    }
+    .left-section {
+        width: auto;
+    }
+    .kar-modul-r-text-melk p {
+        width: auto;
+    }
+    .description-block h3 {
+        border-right: none;
+        border-bottom: none;
+        font-size: 14px;
+        line-height: 16.8px;
+        padding: 5px;
+    }
+    .description-block strong {
+        font-size: 20px;
+        line-height: 22px;
+        max-width: 215px;
+    }
+    .accordion-title h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .accordion-content span {
+        display: none;
+    }
+    .accordion-content {
+        flex-direction: column;
+    }
+    .accordion-content-textbutt {
+        width: auto;
+    }
+    .accordion-item {
+        border-bottom: none;
+    }
+    .accordion-content-textbutt button {
+        display: none;
+    }
+    .order-button-mobile {
+        display: block;
+    }
+    .accordion-content-textbutt p {
+        margin-block-end: 1em;
+    }
+    .order-button {
+        padding: 15px 30px;
+    }
+    .overlay-text-modul span {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        max-width: 150px;
+    }
+    .modul-cta-button {
+        width: 67% !important;
+    }
+    .left-section {
+        display: none;
+    }
+
      
 }
 @media screen and (max-width: 430px) {

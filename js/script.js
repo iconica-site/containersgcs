@@ -63,6 +63,81 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Скрипт от страницы ЛСТК
+
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    if (menu.classList.contains("open-menu")) {
+        menu.classList.remove("open-menu");
+    } else {
+        menu.classList.add("open-menu");
+    }
+}
+
+function toggleCatalog() {
+    const catalogSubmenu = document.getElementById("catalog-submenu");
+    if (catalogSubmenu.style.display === "block") {
+        catalogSubmenu.style.display = "none";
+    } else {
+        catalogSubmenu.style.display = "block";
+    }
+}
+
+document.querySelectorAll('.components-buttons a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+
+        // Удаляем класс active у всех ссылок
+        document.querySelectorAll('.components-buttons a').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Добавляем класс active к текущей ссылке
+        this.classList.add('active');
+
+        // Получаем индекс нажатой ссылки
+        const index = this.dataset.index;
+
+        // Скрываем все изображения
+        document.querySelectorAll('.components-left-img img, .components-right-img-big img').forEach(img => {
+            img.classList.add('hidden');
+        });
+
+        // Показываем нужные изображения
+        document.querySelectorAll('.components-left-img img')[index].classList.remove('hidden');
+        document.querySelectorAll('.components-right-img-big img')[index].classList.remove('hidden');
+
+        // Скрываем все тексты
+        document.querySelectorAll('.components-text span').forEach(text => {
+            text.classList.add('hidden');
+        });
+
+        // Показываем нужный текст
+        document.querySelector(`.components-text span[data-index="${index}"]`).classList.remove('hidden');
+    });
+});
+
+
+let currentIndex = 0;
+const blocks = document.querySelectorAll('.block');
+const totalBlocks = blocks.length;
+
+document.querySelectorAll('.nextBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        blocks[currentIndex].style.display = 'none'; // Скрываем текущий блок
+        currentIndex = (currentIndex + 1) % totalBlocks; // Переход к следующему блоку
+        blocks[currentIndex].style.display = 'flex'; // Показываем следующий блок
+    });
+});
+
+document.querySelectorAll('.prevBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        blocks[currentIndex].style.display = 'none'; // Скрываем текущий блок
+        currentIndex = (currentIndex - 1 + totalBlocks) % totalBlocks; // Переход к предыдущему блоку
+        blocks[currentIndex].style.display = 'flex'; // Показываем предыдущий блок
+    });
+});
+
 
 
 // Открыть дропдаун Каталог
@@ -153,6 +228,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Модульные здания аккордион
+
+function toggleAccordion(id) {
+    const item = document.getElementById(id);
+    const isActive = item.classList.contains('active');
+    
+    // Закрываем все остальные блоки
+    document.querySelectorAll('.accordion-item').forEach((el) => {
+      el.classList.remove('active');
+    });
+  
+    // Если блок не был активен, активируем его
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  }
 
 // Свайперы с главной страницы
 const swiper1 = new Swiper('.swiper', {
