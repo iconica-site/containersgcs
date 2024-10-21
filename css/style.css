@@ -1962,7 +1962,7 @@ li.active a{
         line-height: 48px;
         color: #00346999;
         margin-block-start: 10px;
-        margin-block-end: 10px;
+        margin-block-end: 45px;
         
     }
     /* Скрыть выпадающий список по умолчанию */
@@ -2523,7 +2523,7 @@ button {
   /* width: 250px;  */
   height: auto;
   border-radius: 5px;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .right-section {
@@ -2602,7 +2602,7 @@ button {
     width: 446px;
 }
 
-.svg-arrow {
+.svg-arrow-modul {
   transform: rotate(90deg);
   transition: transform 0.3s ease;
 }

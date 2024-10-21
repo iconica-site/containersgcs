@@ -387,8 +387,8 @@
                     <div class="categoru-slider-head">
                         <h2>ТОВАРЫ В ТОЙ ЖЕ КАТЕГОРИИ</h2>
                         <div class="pr-page-swip-button-flex">
-                            <div class="swiper-button-prev swiper-category-button"></div>
-                            <div class="swiper-button-next swiper-category-button"></div>
+                            <div class="swiper-button-prev swiper-category-button" style="width: 55px; height: 40px;"></div>
+                            <div class="swiper-button-next swiper-category-button" style="width: 55px; height: 40px;"></div>
                         </div>
                     </div>
                     <div class="swiper-container category-swiper">
@@ -586,65 +586,31 @@
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        let currentIndex = 0;
+<script>
 
-        function changeImage(element) {
-            const mainImage = document.getElementById('mainImage');
-            thumbnails.forEach((thumb, index) => {
-                if (thumb === element) {
-                    currentIndex = index;
-                }
-                thumb.classList.remove('active');
-            });
-            element.classList.add('active');
-            mainImage.src = element.src;
-        }
+const categorySlider6 = new Swiper('.category-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-category-button.swiper-button-next',
+        prevEl: '.swiper-category-button.swiper-button-prev',
+    },
+    loop: true,
+});
 
-        function prevImage() {
-            currentIndex = (currentIndex === 0) ? thumbnails.length - 1 : currentIndex - 1;
-            changeImage(thumbnails[currentIndex]);
-        }
+var swiper7 = new Swiper('.category-swiper-mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
 
-        function nextImage() {
-            currentIndex = (currentIndex === thumbnails.length - 1) ? 0 : currentIndex + 1;
-            changeImage(thumbnails[currentIndex]);
-        }
-
-        const categorySlider = new Swiper('.category-swiper', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.swiper-category-button.swiper-button-next',
-                prevEl: '.swiper-category-button.swiper-button-prev',
-            },
-            loop: true,
-        });
-
-        var swiper6 = new Swiper('.category-swiper-mobile', {
-            slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
-            spaceBetween: 20, // отступ
-            speed: 800, // Плавная прокрутка
-            freeMode: true, // написал выше
-            effect: 'slide', // Эффект плавного перехода
-            touchRatio: 1.5, // Увеличение чувствительности при свайпе
-            resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
-            // grabCursor: true, // Указатель мыши меняется на "руку"
-            loop: false, // Отключаем бесконечную прокрутку
-        });
-
-        function toggleDescription() {
-            const description = document.getElementById('description');
-            const arrow = document.getElementById('arrow');
-
-            // Переключаем класс collapsed для сжатия/разжатия текста
-            const isCollapsed = description.classList.toggle('collapsed');
-
-            // Поворачиваем стрелку на 180 градусов
-            arrow.style.transform = isCollapsed ? 'rotate(0deg)' : 'rotate(180deg)';
-        }
-    </script>
+</script>
 
 </body>
 </html>

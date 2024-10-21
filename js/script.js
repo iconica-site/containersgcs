@@ -229,6 +229,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+ // Галерея фото в товаре
+ document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    let currentIndex = 0;
+
+    // Функция для смены главного изображения
+    function changeImage(element) {
+        const mainImage = document.getElementById('mainImage');
+        thumbnails.forEach((thumb, index) => {
+            if (thumb === element) {
+                currentIndex = index;
+            }
+            thumb.classList.remove('active');
+        });
+        element.classList.add('active');
+        mainImage.src = element.src;
+    }
+
+    // Функция для переключения на предыдущее изображение
+    function prevImage() {
+        currentIndex = (currentIndex === 0) ? thumbnails.length - 1 : currentIndex - 1;
+        changeImage(thumbnails[currentIndex]);
+    }
+
+    // Функция для переключения на следующее изображение
+    function nextImage() {
+        currentIndex = (currentIndex === thumbnails.length - 1) ? 0 : currentIndex + 1;
+        changeImage(thumbnails[currentIndex]);
+    }
+
+    // Привязываем функции к глобальному контексту для использования в HTML
+    window.prevImage = prevImage;
+    window.nextImage = nextImage;
+    window.changeImage = changeImage;
+});
+
+
+
+function toggleDescription() {
+    const description = document.getElementById('description');
+    const arrow = document.getElementById('arrow');
+
+    // Переключаем класс collapsed для сжатия/разжатия текста
+    const isCollapsed = description.classList.toggle('collapsed');
+
+    // Поворачиваем стрелку на 180 градусов
+    arrow.style.transform = isCollapsed ? 'rotate(0deg)' : 'rotate(180deg)';
+}
+
+
 // Модульные здания аккордион
 
 function toggleAccordion(id) {
@@ -307,4 +357,6 @@ var swiper5 = new Swiper('.components-button-slider-mobile', {
     // grabCursor: true, // Указатель мыши меняется на "руку"
     loop: false, // Отключаем бесконечную прокрутку
 });
+
+
 
