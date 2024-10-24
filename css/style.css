@@ -172,6 +172,7 @@ header {
     width: 50%;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     padding: 10px;
     border-bottom: solid 5px #C8C8C8;
 }
@@ -195,6 +196,7 @@ header {
 
 .take-buttons-otr {
     width: 50%;
+    cursor: pointer;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -539,6 +541,7 @@ header {
     border: none;
     margin-bottom: 10px;
     text-indent: 15px;
+    cursor: pointer;
 }
 
 .main-form-input input::placeholder {
@@ -892,6 +895,7 @@ li.active a{
     line-height: 19.2px;
     color: #003469;
     text-decoration: none;
+    cursor: pointer;
 }
 .catalog-car-condition a {
     font-size: 16px;
@@ -902,6 +906,7 @@ li.active a{
 .catalog-car-button-condition a {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .catalog-car-category-dropdown {
     display: none;
@@ -1381,7 +1386,7 @@ li.active a{
     
     .about-video-container {
         width: 670px;
-        height: 578px;
+        height: 615px;
     }
     
     .about-video-container video {
@@ -1399,7 +1404,7 @@ li.active a{
     
     .about-blocks {
         width: 100%;
-        height: 159px;
+        /* height: 159px; */
         background-color: #24588E;
         margin-bottom: 20px;
         border-radius: 10px;
@@ -1461,17 +1466,18 @@ li.active a{
         color: #24588E;
     }
     .newsdetail-container {
-        padding: 20px;
+        /* padding: 20px; */
         width: 70%;
         padding-top: 0px;
     }
     .newsdetail-sidebar {
-        width: 100%;
+        width: 95%;
         background:#FFFFFF;
         padding: 20px;
         height: 90vh;
         overflow-y: scroll;
         border-radius: 10px;
+        padding-right: 0px;
     }
     .page-newsdetail-main {
         display: flex;
@@ -1633,6 +1639,7 @@ li.active a{
         color:#FFFFFF;
         margin-block-start: 0px;
         margin-block-end: 15px;
+        white-space: nowrap;
     }
     .send-text span {
         font-size: 16px;
@@ -1725,11 +1732,11 @@ li.active a{
         padding: 10px;
         text-decoration: none;
         color: #818181;
-        max-width: 100%;
-        width: 280px;
+        max-width: 280px;
+        width: 100%;
     }
     .slovari-sidebar {
-        width: 100%;
+        /* width: 100%; */
         background: #FFFFFF;
         padding: 20px;
         border-radius: 10px;
@@ -1756,6 +1763,7 @@ li.active a{
         flex: 1;
         margin-right: 20px;
         position: relative;
+        width: 55%;
     }
     
     .main-image {
@@ -1941,6 +1949,7 @@ li.active a{
         align-items: center;
         background-color:#003469;
         color: white;
+        cursor: pointer;
     }
     .detail-cont-button a {
         font-size: 18px;
@@ -2200,6 +2209,7 @@ li.active a{
     font-size: 400px;
     line-height: 320px;
     color: #FFFFFF;
+    width: 470px;
 }
 
 .controls {
@@ -2516,7 +2526,7 @@ button {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .left-section img {
@@ -2582,6 +2592,10 @@ button {
   cursor: pointer;
   background-color: #f0f0f0;
   position: relative;
+}
+.header-logo a {
+    cursor: pointer;
+
 }
 
 .accordion-number {

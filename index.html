@@ -33,7 +33,7 @@
         <div class="header-main">
             <div class="header-logo">
                 <!-- <img src="img/Logo.png"> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="77" height="24" viewBox="0 0 77 24" fill="none" style="margin-top: 5px;">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="77" height="24" viewBox="0 0 77 24" fill="none" style="margin-top: 5px;">
                     <g clip-path="url(#clip0_1022_3443)">
                     <path d="M23.7775 11.9979C23.7775 18.5639 18.4547 23.8867 11.8888 23.8867C5.32278 23.8867 0 18.5639 0 11.9979C0 5.43191 5.32278 0.109131 11.8888 0.109131C18.4547 0.109131 23.7775 5.43191 23.7775 11.9979Z" fill="white"/>
                     <path d="M12.1437 2.91209C12.113 2.91209 11.9594 2.88129 11.9287 2.88129C11.9184 2.86076 11.9041 2.80121 11.9287 2.72728C11.9594 2.66568 12.0208 2.72728 12.113 2.69648C12.2051 2.66568 12.1437 2.66568 12.328 2.66568C12.3526 2.66568 12.4611 2.70675 12.5123 2.72728C12.6045 2.75808 12.7827 2.81969 12.7581 2.81969H12.6352C12.5738 2.81969 12.4816 2.85049 12.4202 2.88129C12.3587 2.91209 12.3587 2.91209 12.2973 2.91209H12.1437Z" fill="#003469"/>
@@ -83,7 +83,7 @@
                     <rect width="23.5081" height="23.9957" rx="11.754" fill="white"/>
                     </clipPath>
                     </defs>
-                </svg>
+                </svg></a>
             </div>
             <div class="header-buttons">
                 <a href="" id="catalogButton">КАТАЛОГ</a>
@@ -437,13 +437,13 @@
                 <div class="take-content">
                     <div class="take-buttons">
                         <div class="take-buttons-cat active">
-                            <a>По категория</a>
+                            <a href="#" id="btn-cat">По категория</a>
                         </div>
                         <div class="take-buttons-otr">
-                            <a>По отраслям</a>
+                            <a href="#" id="btn-otr">По отраслям</a>
                         </div>
                     </div>
-                    <div class="take-area-forblocks">
+                    <div class="take-area-forblocks" id="category-block">
                         <div class="take-blocks-cont">
                             <div class="take-tags">
                                 <span>Open top</span>
@@ -501,6 +501,66 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="take-area-forblocks take-forblocks-otrasli" id="industry-block" style="display: none;">
+                        <div class="take-blocks-cont">
+                            <div class="take-tags">
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                            </div>
+                            <div class="take-cont-img">
+                                <img src="img/kat-cvet1.png">
+                            </div>
+                            <div class="take-cont-text">
+                                <h4>Горнодобывающая отрасль</h4>
+                            </div>
+                        </div>
+                        <div class="take-blocks-cont">
+                            <div class="take-tags">
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                            </div>
+                            <div class="take-cont-img">
+                                <img src="img/kat-cvet2.png">
+                            </div>
+                            <div class="take-cont-text">
+                                <h4>Сельское хозяйство</h4>
+                            </div>
+                        </div>
+                        <div class="take-blocks-cont">
+                            <div class="take-tags">
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                            </div>
+                            <div class="take-cont-img">
+                                <img src="img/kat-cvet4.png">
+                            </div>
+                            <div class="take-cont-text">
+                                <h4>Общественное питание</h4>
+                            </div>
+                        </div>
+                        <div class="take-blocks-cont">
+                            <div class="take-tags">
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                                <span>Open top</span>
+                            </div>
+                            <div class="take-cont-img">
+                                <img src="img/kat-cvet3.png">
+                            </div>
+                            <div class="take-cont-text">
+                                <h4>Логистическая промышленность</h4>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -571,7 +631,7 @@
                         </div>
                         <div class="product-image-container">
                             <img src="img/slider.png" alt="Product Image">
-                            <div class="">
+                            <div class="product-image-container-mobile">
                                 <div class="product-dimensions height">
                                     <span>высота контейнера</span>
                                     <div class="product-dim-mobile">
@@ -605,26 +665,28 @@
                         </div>
                         <div class="product-image-container">
                             <img src="img/slider.png" alt="Product Image">
-                            <div class="product-dimensions height">
-                                <span>высота контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>высота</p>
+                            <div class="product-image-container-mobile">
+                                <div class="product-dimensions height">
+                                    <span>высота контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>высота</p>
+                                    </div>
+                                    <p>3,20 м</p>
                                 </div>
-                                <p>3,20 м</p>
-                            </div>
-                            <div class="product-dimensions width">
-                                <span>ширина контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>ширина</p>
+                                <div class="product-dimensions width">
+                                    <span>ширина контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>ширина</p>
+                                    </div>
+                                    <p>6,10 м</p>
                                 </div>
-                                <p>6,10 м</p>
-                            </div>
-                            <div class="product-dimensions length">
-                                <span>длина контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>длина</p>
+                                <div class="product-dimensions length">
+                                    <span>длина контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>длина</p>
+                                    </div>
+                                    <p>10,4 м</p>
                                 </div>
-                                <p>10,4 м</p>
                             </div>
                         </div>
                     </div>
@@ -637,26 +699,28 @@
                         </div>
                         <div class="product-image-container">
                             <img src="img/slider.png" alt="Product Image">
-                            <div class="product-dimensions height">
-                                <span>высота контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>высота</p>
+                            <div class="product-image-container-mobile">
+                                <div class="product-dimensions height">
+                                    <span>высота контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>высота</p>
+                                    </div>
+                                    <p>3,20 м</p>
                                 </div>
-                                <p>3,20 м</p>
-                            </div>
-                            <div class="product-dimensions width">
-                                <span>ширина контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>ширина</p>
+                                <div class="product-dimensions width">
+                                    <span>ширина контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>ширина</p>
+                                    </div>
+                                    <p>6,10 м</p>
                                 </div>
-                                <p>6,10 м</p>
-                            </div>
-                            <div class="product-dimensions length">
-                                <span>длина контейнера</span>
-                                <div class="product-dim-mobile">
-                                    <p>длина</p>
+                                <div class="product-dimensions length">
+                                    <span>длина контейнера</span>
+                                    <div class="product-dim-mobile">
+                                        <p>длина</p>
+                                    </div>
+                                    <p>10,4 м</p>
                                 </div>
-                                <p>10,4 м</p>
                             </div>
                         </div>
                     </div>
@@ -998,7 +1062,32 @@
 
 <script>
     
+document.addEventListener("DOMContentLoaded", function() {
+    const btnCat = document.getElementById('btn-cat');
+    const btnOtr = document.getElementById('btn-otr');
+    const categoryBlock = document.getElementById('category-block');
+    const industryBlock = document.getElementById('industry-block');
+    
+    // По умолчанию показываем категории
+    categoryBlock.style.display = 'flex';
+    industryBlock.style.display = 'none';
 
+    btnCat.addEventListener('click', function(e) {
+        e.preventDefault();
+        categoryBlock.style.display = 'flex';
+        industryBlock.style.display = 'none';
+        btnCat.parentElement.classList.add('active');
+        btnOtr.parentElement.classList.remove('active');
+    });
+
+    btnOtr.addEventListener('click', function(e) {
+        e.preventDefault();
+        categoryBlock.style.display = 'none';
+        industryBlock.style.display = 'flex';
+        btnCat.parentElement.classList.remove('active');
+        btnOtr.parentElement.classList.add('active');
+    });
+});
 
 
 
