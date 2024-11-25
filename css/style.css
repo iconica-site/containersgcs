@@ -1,6 +1,7 @@
 body {
     font-family: "Manrope", sans-serif;
     background-color: #F2F2F2;
+    zoom: 87%;
 }
 header {
     display: flex;
@@ -73,7 +74,7 @@ header {
     gap: 10px;
 }
 .video-banner img{
-    max-width: 1895px;
+    /* max-width: 1895px; */
     width: 100%;
 }
 .video-banner {
@@ -2299,7 +2300,7 @@ button {
 .overlay-text-for-img img {
     position: absolute;
     z-index: 1;
-    top: -24%;
+    top: -35%;
     width: 100%;
 }
 /* Стили для текста */
