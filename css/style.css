@@ -1,11 +1,13 @@
 body {
     font-family: "Manrope", sans-serif;
     background-color: #F2F2F2;
-    zoom: 87%;
+    zoom: 83%;
+    margin: 0px;
 }
 header {
     display: flex;
     justify-content: center;
+    margin-top: 8px;
 }
 .header-main {
     display: flex;
@@ -46,6 +48,9 @@ header {
     padding: 25px;
     display: flex;
     justify-content: center;
+}
+.desktop-title-gcs {
+    padding: 0px;
 }
 .title-head {
     max-width: 1360px;
@@ -151,7 +156,7 @@ header {
     width: 100%;
 }
 .take-head {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .take-head h2{
     font-size: 40px;
@@ -209,7 +214,7 @@ header {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .take-blocks-cont {
@@ -1441,8 +1446,8 @@ li.active a{
     }
     
     .text-about-block {
-        font-size: 116px;
-        line-height: 116px;
+        font-size: 100px;
+        line-height: 100px;
         font-weight: bold;
         color: #003469;
     }
@@ -1460,11 +1465,12 @@ li.active a{
     }
     
     .text-about-arrow::after {
-        content: "→";
+        /* content: "→"; */
+        content: ">";
         position: absolute;
-        right: -20px;
-        top: -70px;
-        font-size: 116px;
+        right: -18px;
+        top: -52px;
+        font-size: 80px;
         color: #24588E;
     }
     .newsdetail-container {
@@ -1614,13 +1620,14 @@ li.active a{
     }
     .take-head-index-main h2{
         color: #00346999;
+        margin-bottom: 20px;
     }
     .contacts-head h1{
-        font-size: 80px;
-        line-height: 80px;
+        font-size: 75px;
+        line-height: 75px;
         color: #003469;
         margin-block-start: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .contacts-send-block {
         width: 50%;
