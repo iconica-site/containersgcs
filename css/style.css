@@ -2307,7 +2307,7 @@ button {
 .overlay-text-for-img img {
     position: absolute;
     z-index: 1;
-    top: -35%;
+    top: -46%;
     width: 100%;
 }
 /* Стили для текста */
